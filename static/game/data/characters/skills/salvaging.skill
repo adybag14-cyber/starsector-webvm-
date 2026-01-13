@@ -1,0 +1,34 @@
+{
+	"id":"salvaging",
+	"governingAptitude":"industry",
+	"compressHullmods":false,
+	"effectGroups":[
+		{
+			"name":"Level 1",
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.Salvaging$Level1A"},
+				#{"type":"FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.Salvaging$Level1B"},
+			]
+		},
+		{
+			"name":"Level 2",
+			"requiredSkillLevel":2,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.Salvaging$Level2A"},
+				#{"type":"FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.Salvaging$Level2B"},
+			]
+		},
+		{
+			"name":"Level 3",
+			"requiredSkillLevel":3,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.Salvaging$Level3A"},
+				{"type":"FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.Salvaging$Level3B"},
+			]
+		},
+	],
+}

@@ -1,0 +1,140 @@
+{
+	id:"derelict",
+	"displayName":"Derelict",
+	"displayNameWithArticle":"the derelict",
+	"displayNameLong":"Domain Exploration Derelict",
+	"displayNameLongWithArticle":"the Domain Exploration Derelict",
+	"entityNamePrefix":"",
+	"personNamePrefix":"",
+	"personNamePrefixAOrAn":"a",
+	"displayNameIsOrAre":"are",
+	
+	"logo":"graphics/factions/domain_explorarium.png",
+	"crest":"graphics/factions/crest_domain_explorarium.png",
+	"shipNamePrefix":"DSS",
+	
+	"color":[100,100,100,255],
+	"baseUIColor":[155,155,155,255],
+	#"darkUIColor":[31,94,112,175],
+	#"gridUIColor":[70,200,255,75],
+	
+	"showInIntelTab":false,
+	
+	"shipNameSources":{
+		"DERELICT_DRONE":1,
+	},
+	"names":{
+		"ai":1,
+	},
+	"illegalCommodities":[
+	],
+	"music":{
+		#"encounter_hostile":"music_default_encounter_hostile",
+		"theme":"music_none",
+		"market_neutral":"music_none",
+		"market_hostile":"music_none",
+		"market_friendly":"music_none",
+		"encounter_neutral":"music_none",
+		"encounter_hostile":"music_none",
+		"encounter_friendly":"music_none",
+	},
+	#"internalComms":"hegemony_internal",
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/portrait_ai3.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portrait_ai3.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+		},
+		"posts":{
+		},
+	},
+	"custom":{
+		"allowsTransponderOffTrade":true, # to prevent cargoscan dialog from "patrols"
+	},		
+	"shipRoles":{
+		"fastAttack":{
+			"fallback":{"combatSmall":1},
+		},
+	
+		"escortSmall":{
+			"fallback":{"combatSmall":1},
+		},
+		"escortMedium":{
+			"fallback":{"combatMedium":1},
+		},
+		
+		"combatSmall":{
+			"warden_Defense":10,
+			"picket_Assault":10,
+			"sentry_FS":10,
+			"defender_PD":5,
+			"fallback":{"escortSmall":1},
+		},
+		"combatMedium":{
+			"bastillon_Standard":5,
+			"berserker_Assault":10,
+			"fallback":{"combatSmall":2},
+		},
+		"combatLarge":{
+			"rampart_Standard":10,
+			"fallback":{"combatMedium":2},
+		},
+		"combatCapital":{
+			"fallback":{"combatLarge":2},
+		},
+		"derelictMothership":{
+			"station_derelict_survey_mothership_Standard":10,
+		},
+	},
+	"doctrine":{
+		# ship distribution
+		"small":8,
+		"fast":4,
+		"medium":12,
+		"large":6,
+		"capital":3,
+		
+		# as fraction of combat ships of same size
+		"escortSmallFraction":0,
+		"escortMediumFraction":0,
+		
+		"combatFreighterProbability":0,
+		
+		"minPointsForCombatCapital":10,
+		"minPointsForLargeCarrier":30,
+		
+		"smallCarrierProbability":0,
+		"mediumCarrierProbability":0,
+		"largeCarrierProbability":0,
+		
+		# officers
+		"officersPerPoint":0,
+		"officerLevelPerPoint":0,
+		"officerLevelBase":0,
+		"officerLevelVariance":0,
+		
+		"commanderSkillsPerLevel":0,
+		"commanderSkillChance":0.25,
+		"commanderSkillLevelPerLevel":0.2,
+		"commanderSkills":{
+			"officer_management":10,
+			"coordinated_maneuvers":10,
+			"fighter_doctrine":10,
+			"electronic_warfare":10,
+		},
+	},	
+	"traits":{
+		"captain":{
+			"timid":0,
+			"cautious":0,
+			"steady":0,
+			"aggressive":0,
+			"reckless":10,
+		},
+	},
+},

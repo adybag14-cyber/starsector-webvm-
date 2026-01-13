@@ -1,0 +1,26 @@
+{
+    "displayName": "Light",
+    "fluxCapacitors": 6,
+    "fluxVents": 4,
+    "goalVariant": true,
+    "hullId": "dram",
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "dram_Light",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS 003": "swarmer"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "vulcan",
+                "WS 002": "vulcan"
+            }
+        }
+    ]
+}

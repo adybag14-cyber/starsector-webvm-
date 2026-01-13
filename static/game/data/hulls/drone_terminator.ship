@@ -1,0 +1,81 @@
+{
+    "bounds": [
+        14,
+        0,
+        -2,
+        9,
+        -5,
+        0,
+        -2,
+        -8
+    ],
+    "center": [
+        10,
+        10
+    ],
+    "collisionRadius": 30,
+    "coversColor": "",
+    "engineSlots": [
+        {
+            "angle": 180,
+            "contrailSize": 64,
+            "length": 12,
+            "location": [
+                -8,
+                4
+            ],
+            "style": "HIGH_TECH",
+            "width": 6
+        },
+        {
+            "angle": 180,
+            "contrailSize": 64,
+            "length": 12,
+            "location": [
+                -8,
+                -3
+            ],
+            "style": "HIGH_TECH",
+            "width": 6
+        }
+    ],
+    "height": 24,
+    "hullId": "drone_terminator",
+    "hullName": "Terminator Drone",
+    "hullSize": "FIGHTER",
+    "shieldCenter": [
+        0,
+        0
+    ],
+    "shieldRadius": 20,
+    "spriteName": "graphics/ships/drones/drone_phase.png",
+    "style": "HIGH_TECH",
+    "viewOffset": 0,
+    "weaponSlots": [
+        {
+            "angle": 0,
+            "arc": 360,
+            "id": "WS 001",
+            "locations": [
+                9,
+                0
+            ],
+            "mount": "HIDDEN",
+            "size": "SMALL",
+            "type": "ENERGY"
+        },
+        {
+            "angle": 0,
+            "arc": 360,
+            "id": "WS 002",
+            "locations": [
+                3,
+                0
+            ],
+            "mount": "HIDDEN",
+            "size": "SMALL",
+            "type": "ENERGY"
+        }
+    ],
+    "width": 20
+}

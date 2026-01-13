@@ -1,0 +1,22 @@
+{
+    "displayName": "Patrol",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "hullId": "vigilance",
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "vigilance_AP",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "phasebeam"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS 002": "phasecl"}
+        }
+    ]
+}

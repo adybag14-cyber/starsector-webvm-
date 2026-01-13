@@ -1,0 +1,81 @@
+{
+	"starSystem":"corvus",
+	"markets":[
+		{
+			"entities":["asharu"],
+			"faction":"independent",
+			"size":4,
+			"startingConditions":[
+				"frontier",
+				"desert",
+				"hydroponics_complex",
+				"population_4",
+				"hot",
+				"ore_moderate",
+				"ruins_scattered",
+				"habitable",
+				"spaceport",
+			],
+		},
+		{
+			"entities":["jangala", "corvus_hegemony_station"],
+			"faction":"hegemony",
+			"size":6,
+			#"submarkets":["open_market", "black_market"],
+			#"tariff":0.5,
+			"startingConditions":[
+				"urbanized_polity",
+				"regional_capital",
+				"orbital_station",
+				"military_base",
+				"orbital_burns",
+				#"autofac_heavy_industry",
+				#"autofac_heavy_industry",
+				"luddic_majority",
+				"organics_complex",
+				"jungle",
+				"population_6",
+				#"hot",
+				"inimical_biosphere",
+				#"ore_sparse",
+				"organics_plentiful",
+				"extreme_weather",
+				#"farmland_bountiful",
+			],
+		},
+		{
+			"entities":["corvus_IIIa", "corvus_pirate_station"], # Garnir
+			"faction":"pirates",
+			"size":3,
+			"startingConditions":[
+				"volatiles_complex",
+				"free_market",
+				"orbital_station",
+				"outpost",
+				"vice_demand",
+				"population_3",
+				"no_atmosphere",
+				"volatiles_diffuse",
+				"cold",
+			],
+		},
+#		{
+#			"entities":["corvus_IIIb"], # Barad B
+#			"faction":"pirates",
+#			"size":3,
+#			"startingConditions":[
+#				"ore_complex",
+#				"free_market",
+#				"outpost",
+#				"population_3",
+#				"no_atmosphere",
+#				"ore_abundant",
+#				"cold",
+#			],
+#		},
+	],
+
+}
+
+
+

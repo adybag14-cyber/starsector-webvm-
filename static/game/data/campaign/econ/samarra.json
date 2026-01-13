@@ -1,0 +1,71 @@
+{
+	"starSystem":"samarra",
+	"markets":[
+		{
+			"entities":["tigra_city"],
+			"faction":"hegemony",
+			"size":4,
+			"startingConditions":[
+				"hydroponics_complex",
+				"hydroponics_complex",
+				#"ore_complex",
+				"dissident",
+				"orbital_station",
+				"population_4",
+			],
+		},
+		{
+			"entities":["eventide"],
+			"faction":"hegemony",
+			"size":7,
+			"startingConditions":[
+				"twilight",
+				"spaceport",
+				"light_industrial_complex",
+				#"rural_polity",
+				#"volatiles_complex",
+				"population_7",
+				"habitable",
+				"farmland_adequate",
+				"organics_trace",
+				"rare_ore_sparse",
+				"regional_capital",
+			],
+		},
+		{
+			"entities":["orthrus"],
+			"faction":"independent",
+			"size":4,
+			"startingConditions":[
+				#"organics_complex",
+				"volatiles_complex",
+				"population_4",
+				"volatiles_diffuse",
+				"ore_sparse",
+				"thin_atmosphere",
+				"cold",
+			],
+		},
+		{
+			"entities":["sphinx"],
+			"faction":"hegemony",
+			"size":5,
+			"startingConditions":[
+				#"ore_complex",
+				"outpost",
+				"military_base",
+				"spaceport",
+				"population_5",
+				"antimatter_fuel_production",
+				"low_gravity",
+				"no_atmosphere",
+				"cold",
+			],
+		},
+	],
+
+
+}
+
+
+

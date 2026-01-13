@@ -1,0 +1,15 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 5,
+    "fluxVents": 5,
+    "hullId": "picket",
+    "hullMods": [],
+    "quality": 0,
+    "variantId": "picket_Assault",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+        }
+    }]
+}

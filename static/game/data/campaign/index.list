@@ -1,0 +1,15 @@
+econ
+procgen
+terrain
+abilities.csv
+channels.json
+commodities.csv
+events.json
+market_conditions.csv
+pings.json
+reports.csv
+rules.csv
+sim_opponents.csv
+starmap.json
+submarkets.csv
+terrain.json

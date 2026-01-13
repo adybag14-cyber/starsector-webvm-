@@ -1,0 +1,16 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 4,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "mudskipper",
+    "hullMods": ["insulatedengine"],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "mudskipper_Standard",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {"WS 003": "lightdualmg"}
+    }]
+}

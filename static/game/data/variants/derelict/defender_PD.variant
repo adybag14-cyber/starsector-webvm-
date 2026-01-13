@@ -1,0 +1,15 @@
+{
+    "displayName": "PD",
+    "fluxCapacitors": 5,
+    "fluxVents": 5,
+    "hullId": "defender",
+    "hullMods": [],
+    "quality": 0,
+    "variantId": "defender_PD",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+        }
+    }]
+}

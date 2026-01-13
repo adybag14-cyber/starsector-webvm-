@@ -1,0 +1,169 @@
+{
+    "bounds": [
+        -21,
+        23,
+        -27,
+        1,
+        -20,
+        -24,
+        -10,
+        -32,
+        10,
+        -35,
+        12,
+        -22,
+        -1,
+        -17,
+        8,
+        -13,
+        24,
+        -18,
+        27,
+        -8,
+        44,
+        0,
+        26,
+        10,
+        26,
+        20,
+        8,
+        15,
+        -2,
+        19,
+        11,
+        23,
+        10,
+        35,
+        -10,
+        34
+    ],
+    "builtInMods": ["high_maintenance"],
+    "center": [
+        38,
+        28
+    ],
+    "collisionRadius": 64,
+    "coversColor": "",
+    "engineSlots": [
+        {
+            "angle": 180,
+            "contrailSize": 64,
+            "length": 64,
+            "location": [
+                -24,
+                17
+            ],
+            "style": "HIGH_TECH",
+            "width": 12
+        },
+        {
+            "angle": 180,
+            "contrailSize": 64,
+            "length": 64,
+            "location": [
+                -27,
+                0
+            ],
+            "style": "HIGH_TECH",
+            "width": 12
+        },
+        {
+            "angle": 180,
+            "contrailSize": 64,
+            "length": 64,
+            "location": [
+                -24,
+                -16
+            ],
+            "style": "HIGH_TECH",
+            "width": 12
+        }
+    ],
+    "height": 72,
+    "hullId": "hyperion",
+    "hullName": "Hyperion",
+    "hullSize": "FRIGATE",
+    "shieldCenter": [
+        7,
+        1
+    ],
+    "shieldRadius": 55,
+    "spriteName": "graphics/ships/hyperion_ff.png",
+    "style": "HIGH_TECH",
+    "viewOffset": 0,
+    "weaponSlots": [
+        {
+            "angle": 90,
+            "arc": 330,
+            "id": "WS 001",
+            "locations": [
+                -8,
+                10
+            ],
+            "mount": "TURRET",
+            "size": "SMALL",
+            "type": "ENERGY"
+        },
+        {
+            "angle": -90,
+            "arc": 330,
+            "id": "WS 002",
+            "locations": [
+                -8,
+                -10
+            ],
+            "mount": "TURRET",
+            "size": "SMALL",
+            "type": "ENERGY"
+        },
+        {
+            "angle": 0,
+            "arc": 10,
+            "id": "WS 003",
+            "locations": [
+                9,
+                28
+            ],
+            "mount": "HARDPOINT",
+            "size": "MEDIUM",
+            "type": "ENERGY"
+        },
+        {
+            "angle": 0,
+            "arc": 10,
+            "id": "WS 004",
+            "locations": [
+                9,
+                -28
+            ],
+            "mount": "HARDPOINT",
+            "size": "MEDIUM",
+            "type": "ENERGY"
+        },
+        {
+            "angle": 0,
+            "arc": 5,
+            "id": "WS 005",
+            "locations": [
+                24,
+                14
+            ],
+            "mount": "HARDPOINT",
+            "size": "SMALL",
+            "type": "MISSILE"
+        },
+        {
+            "angle": 0,
+            "arc": 5,
+            "id": "WS 006",
+            "locations": [
+                24,
+                -13
+            ],
+            "mount": "HARDPOINT",
+            "size": "SMALL",
+            "type": "MISSILE"
+        }
+    ],
+    "width": 76
+}

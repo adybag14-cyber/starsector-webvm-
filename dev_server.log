@@ -1,0 +1,111 @@
+
+> webvm@2.0.0 dev
+> vite dev --port 5173 --strictPort
+
+[36m[vite-plugin-static-copy][39m [32mCollected 31 items.[39m
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m2833[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+HOOK RUNNING for /alpine
+HOOK RUNNING for /.well-known/appspecific/com.chrome.devtools.json
+
+Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to automatically configure devtools project settings. To learn why, and how to prevent this message, see https://svelte.dev/docs/cli/devtools-json
+
+HOOK RUNNING for /alpine
+11:01:17 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/SideBar.svelte:86:4 A11y: <div> with mouseenter handler must have an ARIA role
+11:01:17 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/SideBar.svelte:90:1 A11y: <div> with mouseenter, mouseleave handlers must have an ARIA role
+11:01:17 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/Icon.svelte:16:0 A11y: visible, non-interactive elements with an on:click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as <button type="button"> or <a> might be more appropriate. See https://svelte.dev/docs/accessibility-warnings#a11y-click-events-have-key-events for more details.
+11:01:17 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/Icon.svelte:16:0 A11y: <div> with mouseenter, click handlers must have an ARIA role
+11:01:17 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/SmallButton.svelte:9:0 A11y: visible, non-interactive elements with an on:click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as <button type="button"> or <a> might be more appropriate. See https://svelte.dev/docs/accessibility-warnings#a11y-click-events-have-key-events for more details.
+11:01:17 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/SmallButton.svelte:9:0 A11y: <span> with click handler must have an ARIA role
+11:01:17 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/PanelButton.svelte:15:0 A11y: <img> element should have an alt attribute
+11:01:17 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/BlogPost.svelte:7:1 A11y: <img> element should have an alt attribute
+[CheerpX] Serving range bytes=0-0 for /game (target: C:\Users\adyba\starsectorvm\static\game\index.list)
+HOOK RUNNING for /alpine
+HOOK RUNNING for /.well-known/appspecific/com.chrome.devtools.json
+HOOK RUNNING for /alpine
+[CheerpX] Serving range bytes=0-0 for /game (target: C:\Users\adyba\starsectorvm\static\game\index.list)
+HOOK RUNNING for /.well-known/appspecific/com.chrome.devtools.json
+[2m11:05:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/lib/WebVM.svelte, /src/lib/global.css[22m
+[CheerpX] Serving range bytes=0-0 for /game (target: C:\Users\adyba\starsectorvm\static\game\index.list)
+HOOK RUNNING for /alpine
+HOOK RUNNING for /.well-known/appspecific/com.chrome.devtools.json
+HOOK RUNNING for /alpine
+[CheerpX] Serving range bytes=0-0 for /game (target: C:\Users\adyba\starsectorvm\static\game\index.list)
+HOOK RUNNING for /alpine
+HOOK RUNNING for /.well-known/appspecific/com.chrome.devtools.json
+HOOK RUNNING for /alpine
+[CheerpX] Serving range bytes=0-0 for /game (target: C:\Users\adyba\starsectorvm\static\game\index.list)
+[2m11:09:49[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/lib/WebVM.svelte, /src/lib/global.css[22m
+[CheerpX] Serving range bytes=0-0 for /game (target: C:\Users\adyba\starsectorvm\static\game\index.list)
+[CheerpX] Serving full directory /game/ (HEAD)
+[2m11:19:40[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
+[36m[vite-plugin-static-copy][39m [32mCollected 31 items.[39m
+[2m11:19:41[22m [36m[1m[vite][22m[39m server restarted.
+HOOK RUNNING for /alpine
+HOOK RUNNING for /.well-known/appspecific/com.chrome.devtools.json
+
+Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to automatically configure devtools project settings. To learn why, and how to prevent this message, see https://svelte.dev/docs/cli/devtools-json
+
+HOOK RUNNING for /alpine
+11:19:48 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/SideBar.svelte:86:4 A11y: <div> with mouseenter handler must have an ARIA role
+11:19:48 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/SideBar.svelte:90:1 A11y: <div> with mouseenter, mouseleave handlers must have an ARIA role
+11:19:48 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/Icon.svelte:16:0 A11y: visible, non-interactive elements with an on:click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as <button type="button"> or <a> might be more appropriate. See https://svelte.dev/docs/accessibility-warnings#a11y-click-events-have-key-events for more details.
+11:19:48 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/Icon.svelte:16:0 A11y: <div> with mouseenter, click handlers must have an ARIA role
+11:19:48 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/SmallButton.svelte:9:0 A11y: visible, non-interactive elements with an on:click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as <button type="button"> or <a> might be more appropriate. See https://svelte.dev/docs/accessibility-warnings#a11y-click-events-have-key-events for more details.
+11:19:48 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/SmallButton.svelte:9:0 A11y: <span> with click handler must have an ARIA role
+11:19:48 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/PanelButton.svelte:15:0 A11y: <img> element should have an alt attribute
+11:19:48 [vite-plugin-svelte] C:/Users/adyba/starsectorvm/src/lib/BlogPost.svelte:7:1 A11y: <img> element should have an alt attribute
+[2m11:27:37[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
+X [ERROR] Unexpected ")"
+
+    vite.config.js:70:3:
+      70 │     });
+         ╵      ^
+
+[31mfailed to load config from C:\Users\adyba\starsectorvm\vite.config.js[39m
+[2m11:27:38[22m [31m[1m[vite][22m[39m Build failed with 1 error:
+vite.config.js:70:3: ERROR: Unexpected ")"
+[2m11:27:38[22m [31m[1m[vite][22m[39m server restart failed
+HOOK RUNNING for /alpine
+HOOK RUNNING for /.well-known/appspecific/com.chrome.devtools.json
+HOOK RUNNING for /alpine
+HOOK RUNNING for /assets%0D
+
+[1;31m[404] GET /assets%0D[0m
+HOOK RUNNING for /documents%0D
+
+[1;31m[404] GET /documents%0D[0m
+HOOK RUNNING for /game%0D
+
+[1;31m[404] GET /game%0D[0m
+HOOK RUNNING for /starsector%0D
+
+[1;31m[404] GET /starsector%0D[0m
+HOOK RUNNING for /favicon.ico%0D
+
+[1;31m[404] GET /favicon.ico%0D[0m
+HOOK RUNNING for /login.html%0D
+
+[1;31m[404] GET /login.html%0D[0m
+HOOK RUNNING for /scrollbar.css%0D
+
+[1;31m[404] GET /scrollbar.css%0D[0m
+HOOK RUNNING for /serviceWorker.js%0D
+
+[1;31m[404] GET /serviceWorker.js%0D[0m
+HOOK RUNNING for /setup.sh%0D
+
+[1;31m[404] GET /setup.sh%0D[0m
+HOOK RUNNING for /starsector.zip.bak%0D
+
+[1;31m[404] GET /starsector.zip.bak%0D[0m
+HOOK RUNNING for /tailscale.tgz%0D
+
+[1;31m[404] GET /tailscale.tgz%0D[0m
+HOOK RUNNING for /tower.ico%0D
+
+[1;31m[404] GET /tower.ico%0D[0m

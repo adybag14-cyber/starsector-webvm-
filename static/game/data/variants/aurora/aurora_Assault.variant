@@ -1,0 +1,51 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 18,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "aurora",
+    "hullMods": [
+        "unstable_injector",
+        "heavyarmor"
+    ],
+    "permaMods": [],
+    "quality": 1,
+    "variantId": "aurora_Assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 009": "heavyblaster"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 010": "annihilator",
+                "WS 011": "annihilator",
+                "WS 012": "annihilator",
+                "WS 013": "annihilator"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "irpulse",
+                "WS 004": "irpulse",
+                "WS 005": "irpulse",
+                "WS 007": "pulselaser",
+                "WS 008": "pulselaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "pdlaser",
+                "WS 002": "pdlaser",
+                "WS 006": "heavyburst"
+            }
+        }
+    ]
+}

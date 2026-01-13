@@ -1,0 +1,47 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "gryphon",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "gryphon_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS 001": "cyclone"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 008": "pilum",
+                "WS 009": "salamanderpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 010": "swarmer",
+                "WS 011": "swarmer",
+                "WS 012": "swarmer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "dualflak",
+                "WS 003": "vulcan",
+                "WS 004": "vulcan",
+                "WS 005": "vulcan",
+                "WS 006": "vulcan",
+                "WS 007": "vulcan"
+            }
+        }
+    ]
+}

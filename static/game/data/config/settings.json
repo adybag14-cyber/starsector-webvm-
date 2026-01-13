@@ -1,0 +1,967 @@
+{
+
+	##############################################################
+	# These settings CAN NOT be changed by mods.
+	# You can still change them yourself, though.
+	##############################################################
+	
+	"vsync":true,
+	"fps":60, # fps only used if vsync is false
+	"devMode":false,
+	
+	"colorblindMode":false,
+	"undecoratedWindow":false,
+	"alwaysUndecoratedAtFullscreen":true,
+	"enableSoundFilters":true,
+	#"resolutionOverride":"1024x768",
+	#"forceAspectRatio":"1.3333",
+	#"windowLocationX":0,
+	#"windowLocationY":0,
+	
+	#"autoturnMode":false, # replaced by checkbox in Gameplay Settings
+	"showEnemyWaypoints":false,
+	
+	"allowForceQuitInIronMode":true, # whether Alt-F4 and similar works when playing campaign in iron mode
+	
+	# don't set to true, likely a bad idea, game crashes and corrupted saves at random, etc
+	# use at own risk... but really, just don't
+	"allowAnyJavaVersion":false,
+	
+	###
+	##############################################################
+	# These settings CAN be changed by mods
+	##############################################################
+	
+	"profilerEnabled":false,
+	"forceNoVBO":true,
+	"useGLFlush":true,
+	"useGLFinish":false,
+	"idleWhileWindowNotVisible":true,
+	
+	"legacyLauncher":false,
+	"oneClickJumpPoints":false,
+	
+	"combatSpeedMult":1f,
+	"breakableShips":true,
+	"renderDHullOverlay":true,
+	"renderDHullOverlayForAllDebug":false,
+
+	"uiFadeSpeedMult":1,
+	"processMessagesWhileSavingOrLoading":true, # might work around graphics driver crashes while saving/loading game
+	
+	"fogOfWar":true,
+	"fogOfWarColor":[70,92,114,0],   # alpha channel of this color is not used
+	"smallClouds":true,  # set to true to improve nebula rendering performance
+	"compressSaveGameData":false, # smaller files, faster saving/loading
+	
+	# disabled for now, causes issues with subsequent runs if game is shut down during startup
+	"enableScriptCaching":false, # caches compiled scripts in saves/cache, faster startup time after first run
+	
+	"renderVersionAndIdle":true,
+	"3dPlanetBGInInteractionDialog":false,
+	"3dPlanetBackgrounds":true,
+	"planetBGRightSide":true,
+	"planetBGDimOverlayAlpha":0,
+	
+	"cloudColor":[255,255,255,255],
+	"enableUIStaticNoise":true,
+	"enableShipExplosionWhiteout":true,
+	"asteroidBeltMapColor":[70,50,40,255],
+	"ringSystemMapColor":[100,130,145,255],
+	
+	"allowShipControlWhilePaused":true,
+	"transferCommandCRCost":0,
+	"reservesPeakTimeMult":0,
+	
+	"maxArmorDamageReduction":0.85,
+	"minArmorFraction":0.05, # effective armor never goes below max times this value, even when completely stripped
+	"dpsToHitStrengthMult":0.5,
+	"minRefireDelay":0.05,
+	"zeroFluxEngineBoost":50,
+	"minFluxVentFraction":0,
+	"minVentTimeForWeaponReload":2,
+	"minFighterReplacementRate":0.3,
+	
+	"nebulaSpeedFighter":1,
+	"nebulaSpeedFrigate":0.7,
+	"nebulaSpeedDestroyer":0.8,
+	"nebulaSpeedCruiser":0.9,
+	"nebulaSpeedCapital":1,
+	
+	"crLossMultForRefit":1,
+	"crLossMultForRefitWeapons":2,
+	"crLossMultForRefitHullmods":4,
+	
+	"fighterCrewLossBase":0.5,
+	
+	# OpenAL-related
+	"maxFXSources":64,
+	"maxUISources":10,
+	
+	# how music is pushed back in the campaign while ambient/ability use sounds are happening
+	#"campaignMusicVolumeMult":0.75,
+	#"campaignMusicFilterGain":0.5,
+	#"campaignMusicFilterGainHF":0.15,
+	"campaignMusicVolumeMult":1,
+	"campaignMusicFilterGain":1,
+	"campaignMusicFilterGainHF":0.01,
+	
+	"campaignMaxPan":800,
+	"campaignMaxObjectRangeAroundJumpPoint":5000,
+	
+	#
+	# intel tab map config
+	#
+	"intelMapSectorWidth":30000,
+	"intelMapSectorHeight":30000,
+	"intelMapSectorVisibleWidth":30000,
+	"intelMapSectorVisibleHeight":30000,
+	
+	"sectorWidth":164000,
+	"sectorHeight":104000,
+	
+	"showCampaignRadar":true,
+	"campaignRadarRadius":6000,
+	
+	# only used when devMode=false
+	# should only be used by total conversions (vanilla is designed to look best within default zoom range)
+	# the number is a multiplier for the viewport size
+	"minCombatZoom":0.5, # zoomed in all the way
+	"maxCombatZoom":2.0, # zoomed out all the way
+	
+	#
+	# start difficulty config
+	#
+	"easyPlayerDamageDealtMult":1,
+	"easyPlayerDamageTakenMult":0.75,
+	"easySensorBonus":500,
+	"easySalvageMult":1.5,
+	"easyOfficerLevelMult":1,
+	
+	#
+	# end difficulty config
+	#
+	
+	"genericRollingAverageFactor":0.9f, # per economy interval
+	
+	#
+	# start economy config
+	#
+	"economyEnabled":true,
+	"economyIntervalnGameDays":30,
+	"economyTargetDaysPerFullCalculation":3,
+	"economyMinFramesPerSecond":30,
+	"economyMaxStabilityPenaltyFromUnmetDemand":3,
+	"economyMaxStabilityFromMetDemand":3,
+	"economyMaxStabilityFromImportExportSmuggling":5,
+	"economyDemandMinGreedFraction":0.1,
+	"economyGreedToDemandPriceMult":0.5, # effect is to lower the price at which a supplying market buys the thing is supplies
+	"economyAbsoluteMinNonZeroDemand":10,
+	"economyAbsoluteMinNonZeroSupply":5,
+	"economyMinDemandForPricing":50,
+	"economyMinStockpileForPricing":50,
+	"economyBasePriceMult":0.5,
+	"economyPriceMultPerStabilityPoint":0.15,
+	"economyExceptionOnMissingMarketEntity":true,
+	
+	"economyMaxPlayerSmugglingStabilityPenalty":5,
+	"economyPlayerTradeImpactMult":1, # increases smuggling stability penalty and trade reputation changes
+	"economyPlayerSellIllegalImpactMult":1,
+	"economyPlayerSellMilitaryImpactMult":1,
+	
+	"economyPlayerTradeVolumeForRepChangeMin":100000,
+	"economyPlayerTradeVolumeForRepChangeMax":1000000,
+	"economyPlayerTradeVolumeForRepChangeIncr":100000,
+	"economyPlayerXPPerCreditOfProfit":0.25,
+	"economyMaxRangeForNegativeTradeRepImpactLY":0, # 0 = same system
+	
+	# how far off the average prices have to be to be highlighted red or green
+	"profitMarginFlat":100, 
+	"profitMarginMult":1.5,
+	
+	#
+	# end economy config	
+	#
+	
+	"eventCheckInterval":30, # in days
+	
+	#
+	# begin mission config
+	#
+	
+	# distance, in light years, for missions to possibly be posted on other market's mission boards
+	"missionPostingRange":3,	
+	"missionPostingHostileProbMult":0.33,	
+	"missionPostingProbPerMarketSize":0.07,	
+	"missionPostingProbBonusSameFaction":0.3,	
+	
+	"maxMarketProcurementConcurrent":30;
+	"maxAnalyzeEntityConcurrent":30;
+	"maxSurveyPlanetConcurrent":15;
+
+	"factionCommissionBounty":300,
+	
+	#
+	# end mission config
+	#
+	
+	
+	# the black market always has some supplies/fuel/marines available, even if they're not available on the market
+	# according to the economy simulation
+	"blackMarketMinSupplies":50,
+	"blackMarketMinFuel":50,
+	"blackMarketMinMarines":30,
+	
+	
+	# ship weapons and anything else that's not in the economy
+	"nonEconItemBuyPriceMult":1.2,
+	"nonEconItemSellPriceMult":.25,
+	"shipBuyPriceMult":1.2,
+	"shipSellPriceMult":.4,
+	"hullWithDModsSellPriceMult":0.2,
+	
+	"transponderOffMarketAwarenessMult":0.25,
+	
+	"baseSystemBounty":1000,
+	"basePersonBounty":30000,
+	"personBountyPerLevel":10000,
+	"maxPersonBounties":5,
+	"personBountyNoSpawnRangeAroundPlayerLY":3,
+	
+	"distressCallEventRangeLY":6,
+	"distressCallFuelCost":150,
+	
+	
+	"salvageValuePerFP":300,
+	"salvageFractionCreditsMin":0.1,
+	"salvageFractionCreditsMax":0.25,
+	"salvageCargoFraction":0.75,
+	"salvageDebrisFieldFraction":0.25,
+	"minSalvageValueForDebrisField":1000,
+	
+	"baseShipRecoveryChance":0.25,
+	"baseOwnShipRecoveryChance":0.5,
+	"baseRestoreCostMult":1.2,
+	"baseRestoreCostMultPerDMod":1.2,
+	
+	"salvageOwnWeaponProb":0.5;
+	"salvageWeaponProb":0.25;
+	"salvageOwnWingProb":0.5;
+	"salvageWingProb":0.25;
+	"salvageHullmodProb":0.02;
+	
+	"baseSurveyXP":20,
+	
+	# start economy fleet spawning configuration
+	"maxEconFleets":50,
+	"averageEconSpawnInterval":0.25, # days
+	"minEconSpawnIntervalPerMarket":1, # no less than this many days between trade fleets from same market
+	"minMinorTradeRouteChanceMult":0.2, # 0 to 1. higher values mean more likely fleets for small-scale routes
+	"minTradeVolumeToSpawnFleets":10, # in same units as supply/demand per economyIntervalnGameDays
+	"maxTradeVolume":150000, # fleets will reach maximum size at this trade volume (was 75000)
+	# end economy fleet spawning configuration
+	
+	# start patrol fleet spawning configuration
+	"averagePatrolSpawnInterval":7, # days
+	# end patrol fleet spawning configuration
+	
+	"minFleetSpawnChanceMult":0.1,
+	"minFleetSpawnChanceRangeLY":10,
+	"maxPirateFleets":30, 
+	"maxMercFleets":15, 
+	
+	"autoresolveBaseInterval":1, # days
+	"autoresolveDamageMult":0.25f, # how much damage is dealt in each autoresolve round
+	"battleDetectabilityMult":1, # multiplier for detectability of fleet in battle
+	"battleDetectabilityFlat":1000, # flat modifier for detectability of fleet in battle
+	"battleJoinRange":500, # range for nearby fleets to join a player-initiated encounter
+	
+	"playerMaxLevel":40,
+	
+	"startingCommandPoints":5,
+	"baseSecondsPerCommandPoint":120,
+	
+	"xpGainMult":1,
+	
+	"officerSkillIncreasePerLevel":1,
+	"officerMaxLevel":20,
+	
+	"officerMaxHireable":40,
+	"officerAIMax":10,
+	"baseNumOfficers":4;
+	
+	
+	"baseRepairRateFrigate":10,
+	"baseRepairRateDestroyer":7,
+	"baseRepairRateCruiser":5,
+	"baseRepairRateCapital":3,
+	
+	"suppliesPerMarinePerDay":0;
+	"suppliesPerCrewPerDay":0;
+	"suppliesPerCargoUnitOverCapacity":0.1;
+	"suppliesPerFuelUnitOverCapacity":0.1;
+	"suppliesPerPersonnelUnitOverCapacity":0.1;
+	"supplyConsumptionMothballedMult":0;
+	
+	"maxShipsInFleet":30,
+	
+	
+	"minTravelSpeed":20, # at max burn 0
+	"baseTravelSpeed":0, # in units (pixels) per real-time second (10 sec/day)
+	"speedPerBurnLevel":20, # speed per max burn level, in units (pixels) per real-time second (10 sec/day)
+	
+	"unitsPerLightYear":2000, # 1 unit = 1 pixel at default zoom, in hyperspace
+	"commRelayMessageSpeed":5, # light years per day, for messages going through hyperspace
+	"maxRelayRangeInHyperspace":1, # light years, range for a comm relay that's located in hyperspace
+	"commRelayRangeAroundSystem":1, # light years, range in hyperspace around an in-system relay where messages will be picked up
+	
+	"maxTransponderRequiredRangeAroundMarketSystem":1, # light years
+	
+	"baseFleetSelectionRadius":22,
+	"fleetSelectionRadiusPerUnitSize":2,
+	"maxFleetSelectionRadius":100,
+	
+	# new sensor mechanics
+	"sensorRangeBase":300, # detection range = base + profile + base + strength 
+	"baseSensorFrigate":30, 
+	"baseSensorDestroyer":60, 
+	"baseSensorCruiser":90, 
+	"baseSensorCapital":150, 
+	"maxSensorShips":5, # number of ships used to sensor profile/strength of a fleet 
+	"sensorRangeMax":5000, # anything beyond gets culled from detection checks
+	
+	# old sensor mechanics
+	#"sensorRangeBase":400, # detection range for sensor str 1 vs sensor profile 1; others ranges based on this + log scale
+	#"sensorRangeMax":5000, # anything beyond gets culled from detection checks
+	"sensorStrengthMin":4, # "low engine interference" strength bonus up to this value; unused
+	
+	"detectionRangeTransponderMult":1, # multiplier to detection range (NOT sensor profile) when BOTH fleets have transponders on
+	"detectionRangeDetailsMult":0.5, # fraction of max detection range at which fleet composition is visible w/ transponder off
+	"detectionRangeDetailsAlwaysMult":0.1, # fraction of max detection range at which fleet faction is visible w/ transponder off
+	"detectionRangeDetailsAlwaysMin":50, # min value for that range
+	"detectionRangeDetailsAlwaysNonFleet":0.3, # fraction of max detection range at which hidden entities are "discovered"
+	
+	"minBattleSize":150, # in supplies-to-recover. min value for settings slider
+	"defaultBattleSize":250, # in supplies-to-recover. starting tvalue for settings slider
+	"maxBattleSize":500, # in supplies-to-recover. max value for settings slider
+	
+	# the smaller of these two values is used
+	"maxDisengageSize":150, # maximum number of supplies-to-recover cost before a fleet can't participate in a disengage-style battle
+	"maxDisengageFraction":0.4, # maximum number of supplies-to-recover before a fleet can't disengage, as fraction of current battlesize.
+	
+	"maxNoObjectiveBattleSize":50, # maximum number of supplies-to-recover on the smaller side for the battle to not have objectives
+	
+	"noDeployCRPercent":0,
+	"noDeployCrewPercent":5,
+	
+	# this section is meant to eventually replace the "magical" data/scripts/plugins directory
+	# add EveryFrameCombatPlugins here (with unique keys)
+	"plugins":{
+		# core equivalent of ModPlugin (must implement the ModPlugin interface)
+		"coreLifecyclePlugin":"com.fs.starfarer.api.impl.campaign.CoreLifecyclePluginImpl",
+		
+		"newGameDialogPlugin":"com.fs.starfarer.api.impl.campaign.NewGameDialogPluginImpl",
+		"combatReadinessPlugin":"com.fs.starfarer.api.impl.combat.CRPluginImpl",
+		"newGameCreationEntryPoint":"data.scripts.world.SectorGen",
+		"newGameSectorProcGen":"com.fs.starfarer.api.impl.campaign.procgen.SectorProcGen",
+		
+		"officerLevelUp":"com.fs.starfarer.api.impl.campaign.OfficerLevelupPluginImpl",
+		
+		"surveyPlugin":"com.fs.starfarer.api.impl.campaign.SurveyPluginImpl",
+		
+		"coordinatedManeuversPlugin":"com.fs.starfarer.api.impl.campaign.skills.CoordinatedManeuversScript",
+		"electronicWarfarePlugin":"com.fs.starfarer.api.impl.campaign.skills.ElectronicWarfareScript",
+		"commRelayPlugin":"com.fs.starfarer.api.impl.campaign.skills.CommRelayScript",
+	},
+
+	# where rule commands called from rules.csv can be implemented.
+	# rules from multiple packages CAN NOT share the same name	
+	"ruleCommandPackages":[
+		"com.fs.starfarer.api.impl.campaign.rulecmd",
+		"com.fs.starfarer.api.impl.campaign.rulecmd.salvage",
+		"com.fs.starfarer.api.impl.campaign.rulecmd.newgame",
+	],
+	
+	"crLossMultForRetreatInLoss":0,
+	
+	"crLossMultForHullDamage":0,
+	"crLossMultForFlameout":0,
+	"crLossMultForWeaponDisabled":0,
+	"crLossMultForMissilesFired":0,
+
+	# main color used for menu buttons and the like
+	"buttonBg":[70,222,255,255],
+	"buttonBgDark":[31,94,112,175],
+	"buttonText":[170,222,255,255],
+	"buttonShortcut":[255,210,0,255],
+	"hColor":[255,210,0,255],  # highlight color, shorter version for use in reports.csv/rules.csv
+	#"buttonShortcut":[245,235,100,255],
+	#"buttonShortcut":[245,219,113,255],
+	"defaultFont":"graphics/fonts/insignia15LTaa.fnt",
+	
+	#"progressBarCrewColor":[107,175,0,255],
+	#"progressBarCargoColor":[175,155,0,255],
+	#"progressBarFuelColor":[220,94,41,255],
+	"progressBarCargoColor":[225,225,160,255],
+	"progressBarCrewColor":[0,225,160,255],
+	#"progressBarFuelColor":[220,144,100,255],
+	"progressBarFuelColor":[255,125,25,255],
+	#"progressBarFuelColor":[165,100,255,255],
+	"progressBarOverflowColor":[255,0,0,200],
+	"progressBarHullColor":[120,182,182,255],
+	"progressBarCRColor":[168,204,184,255],
+	"progressBarCrewLossColor":[225,80,0,255],
+	"progressBarStandardColor":[0,121,216,255],
+	"progressBarFleetPointsColor":[0,181,216,255],
+	"progressBarHangarSpaceColor":[0,121,216,255],
+	"progressBarWarningColor":[255,210,0,255],
+	"progressBarDangerColor":[255,50,0,255],
+
+	"tooltipTitleAndLightHighlightColor":[203,245,255,255],
+	#"tooltipTitleAndLightHighlightColor":[181,230,255,255], # changed to match player faction "bright" color
+	"widgetBorderColorDark":[100,200,255,255],
+	"widgetBorderColorBright":[100,220,255,255],
+	"standardUIIconColor":[155,228,255,255],
+	"tripadGridColor":[58,241,240,255],
+
+	"flatRedTextColor":[255,0,0,255],
+	"darkRedTextColor":[155,0,0,255],
+	"yellowTextColor":[255,215,0,255],
+	"darkYellowTextColor":[155,105,0,255],
+	"textFriendColor":[155,255,0,255],
+	"textEnemyColor":[255,100,0,255],
+	"textNeutralColor":[70,200,255,255],
+	"textGrayColor":[175,175,175,155],
+	"marketFlavorTextColor":[180,180,180,255],
+	#"standardTextColor":[235,235,235,255],
+	"standardTextColor":[220,220,220,255],
+	
+	"weaponArcColor":[255,210,0,102],
+	"weaponArcFFColor":[255,100,0,255],
+
+	"iconFriendColor":[0,255,0,255],
+	"iconEnemyColor":[255,0,0,255],
+	"iconNeutralShipColor":[75,75,75,255],
+	"iconWaypointColor":[50,150,255,255],
+	
+	"standardGridColor":[70,200,255,75],
+	
+	"bottomMenuButtonInsetColor":[87,202,250,255],
+
+	"graphics":{
+		"newGame":{
+			"young":"graphics/ui/sector_age_young.png",	
+			"average":"graphics/ui/sector_age_average.png",	
+			"old":"graphics/ui/sector_age_old.png",	
+			"mixed":"graphics/ui/sector_age_mixed.png",	
+			"small":"graphics/ui/sector_size_small.png",	
+			"normal":"graphics/ui/sector_size_normal.png",	
+		},
+		"misc":{
+			"default_portrait":"graphics/portraits/portrait_generic.png",
+			"wormhole_bands":"graphics/fx/portal_textures_small.png",	
+			"wormhole_corona":"graphics/fx/wormhole_corona.png",	
+			"wormhole_ring":"graphics/fx/wormhole_ring_bright3.png",
+			"wormhole_ring2":"graphics/fx/wormhole_ring_bright2.png",
+			"wormhole_black":"graphics/backgrounds/wormhole_dest_black.jpg",
+			"wormhole_hyper":"graphics/backgrounds/wormhole_dest_hyper.jpg",
+			"wormhole_stars":"graphics/backgrounds/wormhole_dest_stars2.jpg",
+			"rings_dust0":"graphics/planets/rings_dust0.png",
+			"rings_ice0":"graphics/planets/rings_ice0.png",
+			"rings_asteroids0":"graphics/planets/rings_asteroids0.png",
+			"rings_special0":"graphics/planets/rings_special0.png",
+			#"rings_hab":"graphics/planets/ring_textures3.png",
+			#"question_mark":"graphics/fx/question_mark.png",
+			#"question_mark":"graphics/fx/particlealpha32sq.png",
+			#"question_mark":"graphics/icons/empty_fleet.png",
+			"question_mark":"graphics/icons/fleet_triangle.png",
+			"mission_important":"graphics/hud/attention_required_16x.png",
+			"cargoFighterChip":"graphics/icons/cargo/chip1.png",
+			"cargoModSpec":"graphics/icons/cargo/chip2.png",
+			"fighterButtonBlank":"graphics/ui/fighter_blank.png",
+			"cargoPods":"graphics/debris/cargo_pod_sheet1.png",
+			"campaignDerelictOverlay":"graphics/damage/ship_damage_over3.png",
+		},
+		"abilities":{
+			"holder":"graphics/ui/campaign_abilities.png",
+			"empty_slot":"graphics/icons/abilities/blank.png",
+			"clear_slot":"graphics/icons/abilities/clear.png",
+			"neutrino_detector":"graphics/fx/neutrino_detector.png",
+		},
+		"terrain":{
+			"holder":"graphics/ui/terrain_label_holder.png",
+			"deep_hyperspace":"graphics/terrain/deep_hyperspace2.png",
+			"deep_hyperspace_glow":"graphics/terrain/deep_hyperspace_blue_glow.png",
+			"deep_hyperspace_map":"graphics/terrain/deep_hyperspace_map.png",
+			#"nebula_blue":"graphics/terrain/nebula_blue.png",
+			#"nebula_blue":"graphics/terrain/nebula1024_blue.png",
+			"nebula":"graphics/terrain/nebula.png",
+			"nebula_map":"graphics/terrain/nebula_lowres.png",
+			"nebula_blue":"graphics/terrain/nebula512_blue.png",
+			"nebula_amber":"graphics/terrain/nebula_amber.png",
+			"nebula_blue_map":"graphics/terrain/nebula_blue_map.png",
+			"nebula_amber_map":"graphics/terrain/nebula_amber_map.png",
+			#"nebula_dark":"graphics/fx/nebula_dark.png",
+			#"nebula_dark_map":"graphics/terrain/nebula_blue_map.png",
+			#"slipstream_point":"graphics/fx/hit_glow_small.png",
+			"aurora":"graphics/planets/aurorae.png",
+			#"aurora_neutron":"graphics/planets/aurorae2.png",
+			"pulsar":"graphics/fx/beam_pulsar.png",
+			#"pulsar2":"graphics/fx/beam_pulsar2.png",
+			#"wavefront":"graphics/planets/aurorae.png",
+			"wavefront":"graphics/planets/rings_ice0.png",
+			#"wavefront":"graphics/planets/ring_textures3.png",
+			
+			"wind_effect":"graphics/fx/beam_chunky_fringe.png",
+			#"wind_effect":"graphics/fx/wind_effect.png"
+			
+			"ring_asteroid_1":"graphics/asteroids/ring_asteroid00.png",
+			"ring_asteroid_2":"graphics/asteroids/ring_asteroid01.png",
+			"ring_asteroid_3":"graphics/asteroids/ring_asteroid02.png",
+			"ring_asteroid_4":"graphics/asteroids/ring_asteroid03.png",
+			#"ring_asteroid_9":"graphics/asteroids/ring_asteroid03.png",
+			#"ring_asteroid_8":"graphics/asteroids/ring_asteroid04.png",
+			#"ring_asteroid_7":"graphics/asteroids/ring_asteroid05.png",
+			#"ring_asteroid_6":"graphics/asteroids/ring_asteroid06.png",
+			#"ring_asteroid_5":"graphics/asteroids/ring_asteroid07.png",
+			#"ring_asteroid_4":"graphics/asteroids/ring_asteroid08.png",
+			#"ring_asteroid_3":"graphics/asteroids/ring_asteroid09.png",
+			#"ring_asteroid_2":"graphics/asteroids/ring_asteroid10.png",
+			#"ring_asteroid_1":"graphics/asteroids/ring_asteroid11.png",
+			"asteroid_1":"graphics/asteroids/asteroid1.png",
+			"asteroid_2":"graphics/asteroids/asteroid2.png",
+			"asteroid_3":"graphics/asteroids/asteroid3.png",
+			"asteroid_4":"graphics/asteroids/asteroid4.png",
+			
+			"debrisFieldSheet":"graphics/debris/debris_sheet0.png",
+			"debrisFieldGlowSheet":"graphics/debris/debris_sheet0_glow.png",
+			"debrisFieldMapIcon":"graphics/icons/debris_field_icon.png",
+		},
+		"intel_categories":{
+			"all":"graphics/icons/intel/all.png",
+			"important":"graphics/icons/intel/investigation.png",
+			"events":"graphics/icons/intel/news64.png",
+			"missions":"graphics/icons/intel/missions.png",
+			"bounties":"graphics/icons/intel/bounties.png",
+			"commodities":"graphics/icons/intel/commodities.png",
+			"reputation":"graphics/icons/intel/reputation.png",
+			"star_systems":"graphics/icons/intel/stars.png",
+			"fleet_log":"graphics/icons/intel/stars.png",
+			"channels":"graphics/icons/intel/channels.png",
+			"comms":"graphics/icons/intel/comms64.png",
+			"internal":"graphics/icons/intel/comms_secure64.png",
+		},
+		"hab_glows":{
+			"barren":"graphics/planets/barren_bombarded_lights.png",
+			"asharu":"graphics/planets/asharu_sparse_glow.png",
+			"sindria":"graphics/planets/sindria_glow.png",
+			"volturn":"graphics/planets/volturn_glow.png",
+			"banded":"graphics/planets/clouds_banded01.png",
+			"aurorae":"graphics/planets/clouds_aurorae.png",
+		},
+		"stations":{
+			"default_station":"graphics/stations/station_side00.png",
+			"test_station":"graphics/ships/construction_rig.png",
+			"station_jangala":"graphics/stations/station_jangala.png",
+			"station_side00":"graphics/stations/station_side00.png",
+			"station_side01":"graphics/stations/station_side01.png",
+			"station_side02":"graphics/stations/station_side02.png",
+			"station_side03":"graphics/stations/station_side03.png",
+			"station_side04":"graphics/stations/station_side04.png",
+			"station_side05":"graphics/stations/station_side05.png",
+			"station_side06":"graphics/stations/station_side06.png",
+			"station_sporeship_derelict":"graphics/stations/station_sporeship_derelict.png",
+			"stellar_mirror":"graphics/stations/stellar_mirror.png",
+			"stellar_shade":"graphics/stations/stellar_shade.png",
+		}, 
+		"campaignEntities":{
+			"comm_relay":"graphics/ships/com_relay.png",
+			"inactive_gate":"graphics/stations/gate.png",
+			"stellar_mirror":"graphics/stations/stellar_mirror.png",
+			"stellar_shade":"graphics/stations/stellar_shade.png",
+			
+			"warning_beacon":"graphics/stations/buoy00.png",
+			"warning_beacon_glow":"graphics/stations/buoy00glow.png",
+		},
+		"campaignMissions":{
+			"test":"graphics/icons/markets/bounty.png",
+			"mission_board":"graphics/icons/missions/mission_board.png",
+			"analyze_entity":"graphics/icons/missions/analyze_entity.png",
+			"survey_planet":"graphics/icons/missions/survey_planet.png",
+			"tutorial":"graphics/icons/missions/tutorial_mission.png",
+		},
+		"systemMap":{
+			#"icon_jump_point":"graphics/icons/icon_portal.png",
+			"mission_indicator":"graphics/icons/missions/mission_marker2.png",
+			"icon_jump_point":"graphics/icons/jump-point2.png",
+			"icon_fleet0":"graphics/icons/fleet0.png",
+			"icon_fleet1":"graphics/icons/fleet1.png",
+			"icon_fleet2":"graphics/icons/fleet2.png",
+			"icon_fleet3":"graphics/icons/fleet3.png",
+			"icon_station":"graphics/icons/station0.png",
+			"sensor_contact":"graphics/icons/fleet_triangle.png",
+			"radar_entity":"graphics/fx/particlealpha32sq.png",
+			"radar_mask":"graphics/fx/circle_mask_hires.png",
+			"radar_circle":"graphics/icons/radar_circle.png",
+			"icon_derelict":"graphics/icons/derelict.png",
+			"icon_jump-point":"graphics/icons/jump-point.png",
+			#"icon_jump-point":"graphics/icons/jump-point2.png",
+			#"icon_mirror":"graphics/icons/mirror.png",
+			"icon_mirror":"graphics/icons/mirror2.png",
+			"icon_relay":"graphics/icons/relay.png",
+			#"generic_capital":"graphics/ships/onslaught_bb.png",
+			#"generic_cruiser":"graphics/ships/eagle/eagle_base.png",
+			#"generic_destroyer":"graphics/ships/hammerhead/hammerhead_base.png",
+			#"generic_frigate":"graphics/ships/lasher/lasher_base.png",
+			#"generic_fighter":"graphics/ships/talon_ftr.png",
+			#"map_star":"graphics/backgrounds/star0.png",	
+			"map_star":"graphics/starscape/star4.png",
+			"map_ring":"graphics/terrain/map_ring.png",
+			"map_asteroid_belt":"graphics/terrain/map_asteroid_belt.png",
+			"map_location":"graphics/icons/station0.png",
+		},
+		"backgrounds":{
+			"defaultSpaceBackground":"graphics/backgrounds/background4.jpg",
+			#"defaultHyperBackground":"graphics/backgrounds/hyperspace1.jpg",
+			"defaultHyperBackground":"graphics/backgrounds/hyperspace_bg_cool.jpg",
+
+			"star0":"graphics/backgrounds/star0.png",
+			"star1":"graphics/backgrounds/star1.png",
+			"star2":"graphics/backgrounds/star2.png",
+			"star3":"graphics/backgrounds/star3.png",
+		},
+		"illustrations":{
+			"hound_hangar":"graphics/illustrations/hound_hangar.jpg",
+			"credits_banner":"graphics/illustrations/sf_splash_compressed.jpg",
+			"cargo_loading":"graphics/illustrations/cargo_loading.jpg",
+			"space_wreckage":"graphics/illustrations/space_wreckage.jpg",
+			"vacuum_colony":"graphics/illustrations/vacuum_colony.jpg",
+			"hull_breach":"graphics/illustrations/hull_breach.jpg",
+			"jump_point_normal":"graphics/illustrations/entering_hyperspace.jpg",
+			"jump_point_hyper":"graphics/illustrations/exiting_hyperspace.jpg",
+			"city_from_above":"graphics/illustrations/city_from_above.jpg",
+			"desert_moons_ruins":"graphics/illustrations/desert_moons_ruins.jpg",
+			"quartermaster":"graphics/illustrations/quartermaster.jpg",
+			"comm_relay":"graphics/illustrations/comm_relay.jpg",
+			"abandoned_station":"graphics/illustrations/abandoned_station.jpg",
+			"abandoned_station2":"graphics/illustrations/abandoned_station2.jpg",
+			"abandoned_station3":"graphics/illustrations/abandoned_station3.jpg",
+			"jangala_station":"graphics/illustrations/jangala_station.jpg",
+			"industrial_megafacility":"graphics/illustrations/industrial_megafacility.jpg",
+			"terran_orbit":"graphics/illustrations/terran_orbit.jpg",
+			"pirate_station":"graphics/illustrations/pirate_station.jpg",
+			"space_bar":"graphics/illustrations/space_bar.jpg",
+			"urban00":"graphics/illustrations/urban00.jpg",
+			"urban01":"graphics/illustrations/urban01.jpg",
+			"urban02":"graphics/illustrations/urban02.jpg",
+			"urban03":"graphics/illustrations/urban03.jpg",
+			"orbital":"graphics/illustrations/orbital.jpg",
+			"mine":"graphics/illustrations/mine.jpg",
+			"mairaath":"graphics/illustrations/mairaath.jpg",
+			"eochu_bres":"graphics/illustrations/eochu_bres.jpg",
+			"survey":"graphics/illustrations/survey.jpg",
+			"luddic_shrine":"graphics/illustrations/luddic_church.jpg",
+			"orbital_construction":"graphics/illustrations/orbital_construction.jpg",
+			"dead_gate":"graphics/illustrations/dead_gate.jpg",
+			#"harry":"graphics/illustrations/harry.jpg",
+		},
+		"ui":{
+			"sortIcon":"graphics/ui/buttons/arrow_down.png",
+			
+			"fleet_member_not_combat_ready":"graphics/ui/icons/32x_hatched_star_circle.png",
+			"fleet_member_mothballed":"graphics/ui/icons/32x_bolt_empty.png",
+			"fleet_member_disabled_or_destroyed":"graphics/ui/icons/32x_starburst_hollow.png",
+			
+			"br_location_holder":"graphics/ui/bottomright_location_name_field.png",
+			"br_radar_holder":"graphics/ui/bottomright_radar_holder.png",
+			#"br_course_holder_on":"graphics/ui/bottomright_course_holder_widget.png",
+			"br_course_holder_base":"graphics/ui/bottomright_course_holder_off.png",
+		
+			# tripad begin
+			"tripad_topleft":"graphics/ui/tripad_top_left_decor.png",
+			"tripad_topright":"graphics/ui/tripad_top_right_decor.png",
+			"tripad_botleft":"graphics/ui/tripad_bot_left_decor_extended.png",
+			"tripad_botright":"graphics/ui/tripad_bot_right_decor2.png",
+			"tripad_button_cap_left":"graphics/ui/tripad_bot_button_cap_left.png",
+			"tripad_button_cap_right":"graphics/ui/tripad_bot_button_cap_right.png",
+			"tripad_button_holder":"graphics/ui/tripad_bot_left_button_widget2.png",
+			"tripad_power_button_slot":"graphics/ui/tripad_top_right_power_button_bg.png",
+			"tripad_power_button":"graphics/ui/tripad_powerbutton.png",
+			"tripad_power_button_glow":"graphics/ui/tripad_powerbutton_glow.png",
+			# tripad end
+		
+			# accident risk display
+			#"alert_monitor":"graphics/ui/alert_off.png",
+			#"accident_risk_minor":"graphics/ui/alertglow_yellow.png",
+			#"accident_risk_major":"graphics/ui/alertglow_orange.png",
+			#"accident_risk_critical":"graphics/ui/alertglow_red.png",
+			# accident risk display end
+			
+			# campaign_infowidget_compact
+			"campaign_logistics_display_bg":"graphics/ui/campaign_infowidget_compact2.png",
+			"campaign_logistics_display_bg_full":"graphics/ui/campaign_infowidget4.png",
+			#"campaign_logistics_display_bg_full":"graphics/ui/campaign_infowidget3.png",
+			
+		
+			# ship status list icons begin
+			"icon_tactical_coordinated_maneuvers":"graphics/warroom/objective_nav_buoy.png",
+			"icon_tactical_electronic_warfare":"graphics/warroom/objective_sensor_array.png",
+			
+			"icon_tactical_cr_bonus":"graphics/icons/tactical/cr_tactical.png",
+			"icon_tactical_cr_neutral":"graphics/icons/tactical/cr_tactical.png",
+			"icon_tactical_cr_penalty":"graphics/icons/tactical/cr_tactical3.png",
+			"icon_tactical_engine_boost":"graphics/icons/tactical/engine_boost2.png",
+			"icon_tactical_engine_damage":"graphics/icons/tactical/engine_damage.png",
+			"icon_tactical_nebula":"graphics/icons/tactical/nebula_slowdown.png",
+			"icon_tactical_overloaded":"graphics/icons/tactical/overloaded.png",
+			"icon_tactical_venting":"graphics/icons/tactical/venting_flux2.png",
+			# ship status list icons end
+			
+			"icon_kinetic":"graphics/ui/icons/damagetype_kinetic.png",
+			"icon_high_explosive":"graphics/ui/icons/damagetype_high_explosive.png",
+			"icon_fragmentation":"graphics/ui/icons/damagetype_fragmentation.png",
+			"icon_energy":"graphics/ui/icons/damagetype_energy.png",
+			"icon_other":"graphics/ui/icons/damagetype_other.png",
+			
+			#"icon_crew_green":"graphics/icons/ranks/rank0.png",
+			#"icon_crew_regular":"graphics/icons/ranks/rank1.png",
+			#"icon_crew_veteran":"graphics/icons/ranks/rank2.png",
+			"icon_crew_elite":"graphics/icons/ranks/rank3.png", # used for iron mode save files in load game dialog
+			
+			"icon_op":"graphics/ui/icons/icon_op.png",
+		
+			"icon_autopilot":"graphics/ui/icons/icon_autopilot.png",
+			"icon_deploy_reserves":"graphics/ui/icons/icon_deploy_reserves.png",
+			"icon_repair_refit":"graphics/ui/icons/icon_repair_refit.png",
+			"icon_retreat":"graphics/ui/icons/icon_retreat2.png",
+			"icon_search_and_destroy":"graphics/ui/icons/icon_search_and_destroy.png",
+			"icon_show_video_feed":"graphics/ui/icons/icon_show_video_feed.png",
+			"icon_transfer_command":"graphics/ui/icons/icon_transfer_command.png",
+			"icon_pause":"graphics/warroom/pause_34x.png",
+			"icon_play":"graphics/warroom/play_34x.png",
+			"button_autopilot_on":"graphics/ui/buttons/autopilot_on.png",
+			"button_autopilot_off":"graphics/ui/buttons/autopilot_off.png",
+			
+			"armor_plate":"graphics/ui/armor_plate.png",
+			#"warroom_button_reinforce":"graphics/ui/buttons/warroom_button_transfer.png",
+			
+			
+			"panel00_bot_left":"graphics/ui/bgs/panel00_bot_left.png",
+			"panel00_bot_right":"graphics/ui/bgs/panel00_bot_right.png",
+			"panel00_bot":"graphics/ui/bgs/panel00_bot.png",
+			"panel00_center":"graphics/ui/bgs/panel00_center.png",
+			"panel00_left":"graphics/ui/bgs/panel00_left.png",
+			"panel00_right":"graphics/ui/bgs/panel00_right.png",
+			"panel00_top_left":"graphics/ui/bgs/panel00_top_left.png",
+			"panel00_top_right":"graphics/ui/bgs/panel00_top_right.png",
+			"panel00_top":"graphics/ui/bgs/panel00_top.png",
+			
+			"panel01_bot_left":"graphics/ui/bgs/panel01_bot_left.png",
+			"panel01_bot_right":"graphics/ui/bgs/panel01_bot_right.png",
+			"panel01_bot":"graphics/ui/bgs/panel01_bot.png",
+			"panel01_left":"graphics/ui/bgs/panel01_left.png",
+			"panel01_right":"graphics/ui/bgs/panel01_right.png",
+			"panel01_top_left":"graphics/ui/bgs/panel01_top_left.png",
+			"panel01_top_right":"graphics/ui/bgs/panel01_top_right.png",
+			"panel01_top":"graphics/ui/bgs/panel01_top.png",
+			
+			"ui_border1b_e":"graphics/ui/bgs/ui_border1b_e.png",
+			"ui_border1b_e_bot":"graphics/ui/bgs/ui_border1b_e_bot.png",
+			"ui_border1b_e_top":"graphics/ui/bgs/ui_border1b_e_top.png",
+			"ui_border1b_w":"graphics/ui/bgs/ui_border1b_w.png",
+			"ui_border1b_w_bot":"graphics/ui/bgs/ui_border1b_w_bot.png",
+			"ui_border1b_w_top":"graphics/ui/bgs/ui_border1b_w_top.png",
+			
+			"ui_border1_bot_left":"graphics/ui/bgs/ui_border1_sw.png",
+			"ui_border1_bot_right":"graphics/ui/bgs/ui_border1_se.png",
+			"ui_border1_bot":"graphics/ui/bgs/ui_border1_s.png",
+			"ui_border1_left":"graphics/ui/bgs/ui_border1_w.png",
+			"ui_border1_right":"graphics/ui/bgs/ui_border1_e.png",
+			"ui_border1_top_left":"graphics/ui/bgs/ui_border1_nw.png",
+			"ui_border1_top_right":"graphics/ui/bgs/ui_border1_ne.png",
+			"ui_border1_top":"graphics/ui/bgs/ui_border1_n.png",
+			
+			"ui_border2_bot_left":"graphics/ui/bgs/ui_border2_sw.png",
+			"ui_border2_bot_right":"graphics/ui/bgs/ui_border2_se.png",
+			"ui_border2_bot":"graphics/ui/bgs/ui_border2_s.png",
+			"ui_border2_left":"graphics/ui/bgs/ui_border2_w.png",
+			"ui_border2_right":"graphics/ui/bgs/ui_border2_e.png",
+			"ui_border2_top_left":"graphics/ui/bgs/ui_border2_nw.png",
+			"ui_border2_top_right":"graphics/ui/bgs/ui_border2_ne.png",
+			"ui_border2_top":"graphics/ui/bgs/ui_border2_n.png",
+			
+			"ui_border3_bot_left":"graphics/ui/bgs/ui_border3_sw.png",
+			"ui_border3_bot_right":"graphics/ui/bgs/ui_border3_se.png",
+			"ui_border3_bot":"graphics/ui/bgs/ui_border3_s.png",
+			"ui_border3_left":"graphics/ui/bgs/ui_border3_w.png",
+			"ui_border3_right":"graphics/ui/bgs/ui_border3_e.png",
+			"ui_border3_top_left":"graphics/ui/bgs/ui_border3_nw.png",
+			"ui_border3_top_right":"graphics/ui/bgs/ui_border3_ne.png",
+			"ui_border3_top":"graphics/ui/bgs/ui_border3_n.png",
+			
+			"ui_border4_bot_left":"graphics/ui/bgs/ui_border4_sw.png",
+			"ui_border4_bot_right":"graphics/ui/bgs/ui_border4_se.png",
+			"ui_border4_bot":"graphics/ui/bgs/ui_border4_s.png",
+			"ui_border4_left":"graphics/ui/bgs/ui_border4_w.png",
+			"ui_border4_right":"graphics/ui/bgs/ui_border4_e.png",
+			"ui_border4_top_left":"graphics/ui/bgs/ui_border4_nw.png",
+			"ui_border4_top_right":"graphics/ui/bgs/ui_border4_ne.png",
+			"ui_border4_top":"graphics/ui/bgs/ui_border4_n.png",
+			
+			"scanline11":"graphics/fx/scanline11.png",
+			"scanline21":"graphics/fx/scanline21.png",
+			"scanline12":"graphics/fx/scanline12.png",
+			"scandot22":"graphics/fx/scandot22.png",
+			"scandot3":"graphics/fx/scandot3.png",
+			"scandot4":"graphics/fx/scandot4.png",
+			"scandot44":"graphics/fx/scandot44.png",
+			"scanline44":"graphics/fx/scanline44.png",
+			"scanline1110":"graphics/fx/scanline1110.png",
+			"scanline_large":"graphics/fx/scanline_large.png",
+			"noise":"graphics/fx/noise.png",
+			
+			"button_x_up":"graphics/ui/buttons/x_up.png",
+			"button_x_down":"graphics/ui/buttons/x_down.png",
+			"button_x_glow":"graphics/ui/buttons/x_glow.png",
+			
+			"toggle12_off":"graphics/ui/buttons/toggleA12x_off.png",
+			"toggle12_on":"graphics/ui/buttons/toggleA12x_on.png",
+			"toggle20_off":"graphics/ui/buttons/toggleA20x_off.png",
+			"toggle20_on":"graphics/ui/buttons/toggleA20x_on.png",
+			"toggle40_off":"graphics/ui/buttons/toggleA40x_off.png",
+			"toggle40_on":"graphics/ui/buttons/toggleA40x_on.png",
+			
+			"toggle12_off2":"graphics/ui/buttons/toggleA12x_off.png",
+			"toggle12_on2":"graphics/ui/buttons/toggleA12x_glow.png",
+			"toggle20_off2":"graphics/ui/buttons/toggleA20x_off.png",
+			"toggle20_on2":"graphics/ui/buttons/toggleA20x_glow.png",
+			"toggle40_off2":"graphics/ui/buttons/toggleA40x_off.png",
+			"toggle40_on2":"graphics/ui/buttons/toggleA40x_glow.png",
+		},
+		"warroom":{
+			"icon_asteroid":"graphics/warroom/icon_asteroid.png",
+			"icon_missile":"graphics/warroom/icon_missile.png",
+			"icon_fighter":"graphics/icons/fleet_triangle.png",
+			"icon_explosion":"graphics/fx/circle64.png",
+			"icon_generic_task":"graphics/warroom/taskicons/icon.jpg",
+			"icon_close":"graphics/warroom/icon_close.png",
+			"icon_waypoint":"graphics/warroom/icon_waypoint.png",
+			
+			"icon_task_recon":"graphics/warroom/taskicons/icon_recon.png",
+			"icon_task_rally_fighters":"graphics/warroom/taskicons/icon_strike_force.png",
+			"icon_task_capture":"graphics/warroom/taskicons/icon_capture.png",
+			"icon_task_control":"graphics/warroom/taskicons/icon_control.png",
+			"icon_task_patrol":"graphics/warroom/taskicons/icon_patrol.png",
+			"icon_task_assault":"graphics/warroom/taskicons/icon_assault.png",
+			"icon_task_engage":"graphics/warroom/taskicons/icon_engage.png",
+			#"icon_task_intercept":"graphics/warroom/taskicons/icon_intercept.png",
+			"icon_task_intercept":"graphics/warroom/taskicons/just_kill_it.png",
+			"icon_task_defend":"graphics/warroom/taskicons/icon_defend.png",
+			"icon_task_avoid":"graphics/warroom/taskicons/icon_avoid.png",
+			"icon_task_rally_task_force":"graphics/warroom/taskicons/icon_rally_task_force.png",
+			"icon_task_rally_carrier":"graphics/warroom/taskicons/icon_carrier_group.png",
+			"icon_task_rally_civilian_craft":"graphics/warroom/taskicons/icon_civilian_craft.png",
+			"icon_task_rally_strike_force":"graphics/warroom/taskicons/icon_strike_force.png",
+			"icon_task_strike":"graphics/warroom/taskicons/icon_strike.png",
+			"icon_task_harass":"graphics/warroom/taskicons/icon_harass.png",
+			"icon_task_light_escort":"graphics/warroom/taskicons/icon_escort_light.png",
+			"icon_task_medium_escort":"graphics/warroom/taskicons/icon_escort_medium.png",
+			"icon_task_heavy_escort":"graphics/warroom/taskicons/icon_escort_heavy.png",
+			
+			"icon_menu_action_recon":"graphics/warroom/taskicons/icon_recon.png",
+			"icon_menu_action_capture":"graphics/warroom/taskicons/icon_capture.png",
+			"icon_menu_action_control":"graphics/warroom/taskicons/icon_control.png",
+			"icon_menu_action_patrol":"graphics/warroom/taskicons/icon_patrol.png",
+			"icon_menu_action_assault":"graphics/warroom/taskicons/icon_assault.png",
+			"icon_menu_action_engage":"graphics/warroom/taskicons/icon_engage.png",
+			#"icon_menu_action_intercept":"graphics/warroom/taskicons/icon_intercept.png",
+			"icon_menu_action_intercept":"graphics/warroom/taskicons/just_kill_it.png",
+			"icon_menu_action_defend":"graphics/warroom/taskicons/icon_defend.png",
+			"icon_menu_action_avoid":"graphics/warroom/taskicons/icon_avoid.png",
+			"icon_menu_action_rally_task_force":"graphics/warroom/taskicons/icon_rally_task_force.png",
+			"icon_menu_action_rally_carrier":"graphics/warroom/taskicons/icon_carrier_group.png",
+			"icon_menu_action_rally_civilian_craft":"graphics/warroom/taskicons/icon_civilian_craft.png",
+			"icon_menu_action_rally_strike_force":"graphics/warroom/taskicons/icon_strike_force.png",
+			"icon_menu_action_strike":"graphics/warroom/taskicons/icon_strike.png",
+			"icon_menu_action_harass":"graphics/warroom/taskicons/icon_harass.png",
+			"icon_menu_action_light_escort":"graphics/warroom/taskicons/icon_escort_light.png",
+			"icon_menu_action_medium_escort":"graphics/warroom/taskicons/icon_escort_medium.png",
+			"icon_menu_action_heavy_escort":"graphics/warroom/taskicons/icon_escort_heavy.png",
+			
+			"icon_menu_action_show_video":"graphics/warroom/taskicons/icon_video_feed.png",
+			"icon_menu_action_more_info":"graphics/warroom/taskicons/icon_more_info.png",
+			"icon_menu_action_remove_waypoint":"graphics/warroom/taskicons/icon_control.png",
+			"icon_menu_action_repair_and_refit":"graphics/warroom/taskicons/icon_repair_refit.png",
+			"icon_menu_action_rally_fighters":"graphics/warroom/taskicons/icon_strike_force.png",
+			"icon_menu_action_search_and_destroy":"graphics/warroom/taskicons/icon_search_and_destroy.png",
+			"icon_menu_action_retreat":"graphics/warroom/taskicons/icon_retreat.png",
+			"icon_menu_action_direct_retreat":"graphics/warroom/taskicons/icon_retreat_direct.png",
+			"icon_menu_action_transfer_command":"graphics/warroom/taskicons/icon_transfer_command.png",
+			"icon_menu_action_target":"graphics/warroom/taskicons/icon_set_target.png",
+			"icon_menu_action_rescind_orders":"graphics/warroom/taskicons/icon_rescind_order.png",
+			"icon_menu_action_cancel_assignment":"graphics/warroom/taskicons/icon_cancel_order.png",
+			"icon_menu_action_autopilot":"graphics/warroom/taskicons/icon_autopilot.png",
+
+			
+			"widget_pauseplay":"graphics/warroom/ui_pauseplay.png",
+			"widget_topright_ingame":"graphics/warroom/topright_widget_ingame.png",
+			"widget_topright":"graphics/warroom/topright_widget.png",
+			
+			"icon_commandpoints":"graphics/warroom/icon_commandpoints.png",
+			"icon_fleetpoints":"graphics/warroom/icon_fleetpoints.png",
+			"icon_full_retreat":"graphics/warroom/icon_full_retreat.png",
+			"icon_search_destroy":"graphics/warroom/icon_search+destroy.png",
+		},
+		"fleetScreen":{
+			"icon_buy":"graphics/ui/icons/fleettab/buy.png",
+			"icon_more_info":"graphics/ui/icons/fleettab/more_info.png",
+			"icon_mothball":"graphics/ui/icons/fleettab/mothball.png",
+			"icon_refit":"graphics/ui/icons/fleettab/refit.png",
+			"icon_scuttle":"graphics/ui/icons/fleettab/scuttle.png",
+			"icon_sell":"graphics/ui/icons/fleettab/sell.png",
+			"icon_suspend_repairs":"graphics/ui/icons/fleettab/suspend_repairs.png",
+			
+			"icon_chassis":"graphics/ui/icons/fleettab/chassis14x.png",
+			"icon_cr":"graphics/ui/icons/fleettab/cr24x.png",
+			"icon_hull":"graphics/ui/icons/fleettab/hull24x.png",
+			"icon_supplies":"graphics/ui/icons/fleettab/supplies16x.png",
+			"icon_rank0":"graphics/ui/icons/fleettab/rank0_16x24.png",
+			"icon_rank1":"graphics/ui/icons/fleettab/rank1_16x24.png",
+			"icon_rank2":"graphics/ui/icons/fleettab/rank2_16x24.png",
+			"icon_rank3":"graphics/ui/icons/fleettab/rank3_16x24.png",
+			
+			"icon_logistics_cr":"graphics/ui/icons/fleettab/cr24x16.png",
+			"icon_logistics_hull":"graphics/ui/icons/fleettab/hull24x.png",
+			"icon_logistics_repairs":"graphics/ui/icons/fleettab/repair_rate_24x24.png",
+			"icon_logistics_rating":"graphics/ui/icons/fleettab/LR_doodad_bg.png",
+			
+			"icon_logistics_cargo":"graphics/ui/icons/fleettab/cargo_24x16.png",
+			"icon_logistics_fuel":"graphics/ui/icons/fleettab/fuel_24x16.png",
+			"icon_logistics_personnel":"graphics/ui/icons/fleettab/personnel_24x16.png",
+			
+			"icon_logistics_supplies":"graphics/ui/icons/fleettab/supplies_24x24.png",
+			"icon_logistics_marines":"graphics/ui/icons/fleettab/marines_24x24.png",
+			"icon_logistics_crew":"graphics/ui/icons/fleettab/crew_24x.png",
+			"icon_logistics_credits":"graphics/ui/icons/fleettab/credits_24x24.png",
+			"icon_logistics_fuelRes":"graphics/ui/icons/fleettab/mothball.png",
+			
+			"icon_logistics_sensorStrength":"graphics/icons/campaign/sensor_strength.png",
+			"icon_logistics_sensorProfile":"graphics/icons/campaign/sensor_profile.png",
+		},
+		"planets":{
+			"atmosphere":"graphics/planets/atmosphere.png",  # used if atmosphereAbove=false
+			"atmosphere2":"graphics/planets/atmosphere2.png", # used atmosphereAbove=true
+			"default_sun_halo":"graphics/planets/sun_halo.png", # default halo that's rendered on top of stars
+			"frozen00":"graphics/planets/frozen00.jpg",
+			"frozen01":"graphics/planets/frozen01.jpg",
+			"frozen02":"graphics/planets/frozen02.jpg",
+			"castiron":"graphics/planets/castiron.jpg",
+			"barren03":"graphics/planets/barren03.jpg",
+			"barren02":"graphics/planets/barren02.jpg",
+			"venuslike":"graphics/planets/venuslike.jpg",
+			"terran_eccentric":"graphics/planets/terran_eccentric.jpg",
+			"desert01":"graphics/planets/desert01.jpg",
+			#"bread":"graphics/planets/bread.png",
+		}
+	}
+}

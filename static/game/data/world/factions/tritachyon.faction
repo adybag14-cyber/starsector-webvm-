@@ -1,0 +1,347 @@
+{
+	id:"tritachyon",
+	"color":[135,206,255,255],
+	"displayName":"Tri-Tachyon",
+	"displayNameWithArticle":"Tri-Tachyon",
+	"displayNameLong":"Tri-Tachyon Corporation",
+	"displayNameLongWithArticle":"the Tri-Tachyon Corporation",
+	"logo":"graphics/factions/tritachyon.png",
+	"crest":"graphics/factions/crest_tritachyon.png",
+	"shipNamePrefix":"TTS",
+	"shipNameSources":{
+		"JAPANESE":2,
+		"EGYPTIAN":2,
+		"NORDIC":1,
+		"MERCANTILE":2,
+		"SPACE":2,
+		"GENERAL":2,
+	},
+	"description":"No description yet.",
+	"names":{
+		"modern":1,
+		"world":1,
+		"future":1,
+		"myth":1,
+	},
+	"hullMods":[
+		"frontshield",
+		"advancedshieldemitter",
+		"advancedoptics",
+		"turretgyros",
+		"augmentedengines",
+		"auxiliarythrusters",
+		"dedicated_targeting_core",
+		"eccm",
+		"missleracks",
+		"extendedshieldemitter",
+		"fluxcoil",
+		"fluxdistributor",
+		"frontemitter",
+		"frontshield",
+		"hardenedshieldemitter",
+		"hardened_subsystems",
+		"insulatedengine",
+		"pointdefenseai",
+		"targetingunit",
+		"adaptiveshields",
+		"fluxbreakers",
+		"stabilizedshieldemitter",
+		"expanded_deck_crew",
+		"recovery_shuttles",
+		"operations_center",
+		"nav_relay",
+		"ecm",
+	],
+	"illegalCommodities":[
+		"ai_cores", # only due to treaty w/ Hegemony
+	],
+	"music":{
+		"theme":"music_tritach_encounter_neutral",
+		"market_neutral":"music_tritach_market_neutral",
+		"market_hostile":"music_tritach_market_hostile",
+		"market_friendly":"music_tritach_market_friendly",
+		"encounter_neutral":"music_tritach_encounter_neutral",
+		"encounter_hostile":"music_tritach_encounter_hostile",
+		"encounter_friendly":"music_tritach_encounter_friendly",
+	},
+	"internalComms":"tritachyon_internal",
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/portrait_corporate01.png",
+			"graphics/portraits/portrait_corporate03.png",
+			"graphics/portraits/portrait_corporate05.png",
+			"graphics/portraits/portrait_corporate06.png",
+			"graphics/portraits/portrait13.png",
+			"graphics/portraits/portrait25.png",
+			"graphics/portraits/portrait30.png",
+			"graphics/portraits/portrait35.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portrait_corporate02.png",
+			"graphics/portraits/portrait_corporate04.png",
+			"graphics/portraits/portrait_mercenary02.png",
+			"graphics/portraits/portrait16.png",
+			"graphics/portraits/portrait_corporate04.png",
+			"graphics/portraits/portrait_corporate07.png",
+			"graphics/portraits/portrait34.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+			"spaceCommander":{"name":"Operation Manager"},
+		},
+		"posts":{
+			"patrolCommander":{"name":"Patrol Director"},
+			"fleetCommander":{"name":"Fleet Director"},
+			"baseCommander":{"name":"Base Director"},
+		},
+	},
+	"custom":{
+		"offersCommissions":true,
+		"engagesInHostilities":true,
+		"buysAICores":true,
+		"AICoreValueMult":3,
+		"AICoreRepMult":0.5,
+		"buysSurveyData":true,
+	},	
+	"shipRoles":{
+		"fastAttack":{
+			"scarab_Experimental":1,
+			"shade_Assault":2,
+			"vigilance_FS":10,
+			"wolf_Assault":10,
+			"tempest_Attack":10,
+			"hyperion_Attack":1,
+			"fallback":{"combatSmall":1},
+		},
+	
+		"escortSmall":{
+			"wolf_CS":10,
+			"wolf_PD":10,
+			"omen_PD":10,
+			"monitor_Escort":5,
+			"kite_Support":5,
+			"afflictor_Strike":10,
+			"shade_Assault":10,
+			"fallback":{"combatSmall":1},
+		},
+		"escortMedium":{
+			"hammerhead_Balanced":10,
+			"hammerhead_Elite":10,
+			"medusa_PD":10,
+			"harbinger_Strike":1,
+			"fallback":{"combatMedium":1},
+		},
+		"combatSmall":{
+			"vigilance_Standard":10,
+			"brawler_Assault":10,
+			"brawler_Elite":10,
+			"brawler_tritachyon_Standard":10,
+			"tempest_Attack":10,
+			"hyperion_Attack":1,
+			"hyperion_Strike":1,
+			"scarab_Experimental":2,
+			"fallback":{"escortSmall":1},
+		},
+		"combatMedium":{
+			"hammerhead_Balanced":10,
+			"sunder_CS":10,
+			"hammerhead_Elite":10,
+			"sunder_Assault":10,
+			"medusa_Attack":10,
+			"medusa_CS":10,
+			"harbinger_Strike":4,
+			"fallback":{"combatSmall":2},
+		},
+		"combatLarge":{
+			"falcon_Attack":10,
+			"falcon_CS":10,
+			"eagle_Assault":10,
+			"eagle_Balanced":10,
+			"apogee_Balanced":10,
+			"aurora_Balanced":4,
+			"aurora_Assault":4,
+			"aurora_Escort":4,
+			"aurora_Strike":4,
+			"doom_Strike":10,
+			"fallback":{"combatMedium":2},
+		},
+		"combatCapital":{
+			"paragon_Elite":8,
+			"paragon_Raider":4,
+			"odyssey_Balanced":10,
+			"fallback":{"combatLarge":2},
+		},
+		
+		# hybrid ships with good combat and cargo capacity
+		"combatFreighterSmall":{
+			#"hound_Standard":10,
+			"shepherd_Frontier":10,
+			"cerberus_Standard":10,
+			"wayfarer_Standard":10,
+			"fallback":{"freighterSmall":1},
+		},
+		"combatFreighterMedium":{
+			#"mule_d_Standard":10,
+			"mule_Standard":10,
+			"gemini_Standard":10,
+			"fallback":{"combatFreighterSmall":2},
+		},
+		"combatFreighterLarge":{
+			"venture_Balanced":10,
+			"fallback":{"combatFreighterMedium":2},
+		},
+		
+		"civilianRandom":{
+			"mercury_d_Standard":8,
+			"hermes_d_Standard":10,
+			"starliner_Standard":10,
+			"nebula_Standard":10,
+			"mudskipper_Standard":10,
+			"mercury_Attack":3,
+			"mercury_PD":3,
+			"mercury_FS":3,
+			"mercury_Standard":3,
+			"hermes_Standard":10,
+			"kite_Stock":1,
+			"colossus_Standard":1,
+			#"odyssey_Balanced":1,
+			"fallback":{"freighterSmall":1},
+		},
+	
+	
+		# carriers
+		"carrierSmall":{
+			"condor_Strike":5,
+			"condor_Attack":5,
+			"condor_Support":5,
+			"gemini_Standard":10,
+			"drover_Strike":10,
+			"fallback":{"carrierMedium":0.5},
+		},
+		"carrierMedium":{
+			"heron_Strike":10,
+			"heron_Attack":10,
+			"fallback":{"carrierSmall":2},
+		},
+		"carrierLarge":{
+			"astral_Elite":4,
+			"astral_Strike":10,
+			"astral_Attack":5,
+			"fallback":{"carrierMedium":2},
+		},
+	
+		# freighters and such
+		"freighterSmall":{
+			"hermes_Standard":10,
+			"fallback":{"freighterMedium":0.5},
+		},
+		"freighterMedium":{
+			#"tarsus_d_Standard":10,
+			#"buffalo_d_Standard":10,
+			"tarsus_Standard":10,
+			"buffalo_tritachyon_Standard":10,
+			"fallback":{"freighterSmall":2},
+		},
+		"freighterLarge":{
+			"colossus_Standard":10,
+			"atlas_Standard":10,
+			"fallback":{"freighterMedium":2},
+		},
+		
+		"tankerSmall":{
+			"dram_Light":10,
+			"fallback":{"tankerMedium":0.5},
+		},
+		"tankerMedium":{
+			"phaeton_Standard":10,
+			"fallback":{"tankerSmall":2},
+		},
+		"tankerLarge":{
+			"prometheus_Super":10,
+			"fallback":{"tankerMedium":2},
+		},
+		
+		"personnelSmall":{
+			"mercury_d_Standard":8,
+			"mercury_Attack":3,
+			"mercury_PD":3,
+			"mercury_Standard":3,
+			"mercury_FS":3,
+			"kite_Stock":10,
+			"fallback":{"personnelMedium":0.5},
+		},
+		"personnelMedium":{
+			"valkyrie_Elite":10,
+			"nebula_Standard":2,
+			"fallback":{"personnelSmall":2},
+		},
+		"personnelLarge":{
+			"fallback":{"personnelMedium":2},
+		},
+		
+		# utility ships
+		"tug":{
+			"ox_Standard":10,
+			"fallback":{"utility":1},
+		},
+		"crig":{
+			"crig_Standard":10,
+			"fallback":{"utility":1},
+		},
+		"utility":{
+			"crig_Standard":10,
+			"ox_Standard":10,
+		},
+	},
+	"traits":{
+		"captain":{
+			"timid":3,
+			"cautious":10,
+			"steady":10,
+			"aggressive":5,
+			"reckless":1,
+		},
+	},
+	"doctrine":{
+		# ship distribution
+		"small":8,
+		"fast":10,
+		"medium":10,
+		"large":5,
+		"capital":1,
+		
+		# as fraction of combat ships of same size
+		"escortSmallFraction":1,
+		"escortMediumFraction":1,
+		
+		# freighters tend not to be combat-oriented
+		"combatFreighterProbability":0.15,
+			
+		# tend toward larger ships
+		"minPointsForCombatCapital":17,
+		"minPointsForLargeCarrier":15,
+		
+		# increased preference for carriers
+		"smallCarrierProbability":0.4,
+		"mediumCarrierProbability":0.4,
+		"largeCarrierProbability":0.4,
+			
+		# officers ; TriTachyon is somewhat elite
+		"officersPerPoint":0.45,
+		"officerLevelPerPoint":0.4,
+		"officerLevelBase":7,
+		"officerLevelVariance":0.35,
+		
+		"commanderSkillsPerLevel":0.2,
+		"commanderSkillChance":0.5,
+		"commanderSkillLevelPerLevel":0.3,
+		"commanderSkills":{
+			"officer_management":2,
+			"coordinated_maneuvers":7,
+			"fighter_doctrine":10,
+			"electronic_warfare":10,
+		},
+	},
+},
+

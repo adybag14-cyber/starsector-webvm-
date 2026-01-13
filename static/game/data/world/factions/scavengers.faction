@@ -1,0 +1,325 @@
+{
+	# only used for fleet creation, not an actual faction
+	"id":"scavengers",
+	"displayName":"scavengers",
+	"displayNameWithArticle":"the scavengers",
+	"logo":"graphics/factions/neutral_traders.png",
+	"crest":"graphics/factions/crest_neutral.png",
+	"showInIntelTab":false,
+	"shipNamePrefix":"ISS",
+	"shipNameSources":{
+		"GREEK":4,
+		"CELTIC":2,
+		"SPACE":1,
+		"GENERAL":1,
+	},
+	"names":{
+		"modern":1,
+		"world":1,
+		"future":1,
+		"myth":1,
+	},
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/portrait_hegemony02.png",
+			"graphics/portraits/portrait_hegemony06.png",
+			"graphics/portraits/portrait_mercenary01.png",
+			"graphics/portraits/portrait_mercenary03.png",
+			"graphics/portraits/portrait_mercenary04.png",
+			"graphics/portraits/portrait12.png",
+			"graphics/portraits/portrait13.png",
+			"graphics/portraits/portrait15.png",
+			"graphics/portraits/portrait17.png",
+			"graphics/portraits/portrait18.png",
+			"graphics/portraits/portrait20.png",
+			"graphics/portraits/portrait25.png",
+			"graphics/portraits/portrait26.png",
+			"graphics/portraits/portrait30.png",
+			"graphics/portraits/portrait31.png",
+			"graphics/portraits/portrait33.png",
+			"graphics/portraits/portrait35.png",
+			"graphics/portraits/portrait36.png",
+			"graphics/portraits/portrait40.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portrait_hegemony03.png",
+			"graphics/portraits/portrait_mercenary02.png",
+			"graphics/portraits/portrait_mercenary05.png",
+			"graphics/portraits/portrait14.png",
+			"graphics/portraits/portrait16.png",
+			"graphics/portraits/portrait21.png",
+			"graphics/portraits/portrait22.png",
+			"graphics/portraits/portrait27.png",
+			"graphics/portraits/portrait28.png",
+			"graphics/portraits/portrait29.png",
+			"graphics/portraits/portrait32.png",
+			"graphics/portraits/portrait34.png",
+			"graphics/portraits/portrait37.png",
+			"graphics/portraits/portrait39.png",
+		],
+	},
+	"fleetTypeNames":{
+	},
+	"shipRoles":{
+		"fastAttack":{
+			"hound_d_Standard":10,
+			"wolf_d_Attack":10,	
+			"lasher_Standard":10,
+			"hound_Standard":10,
+			"tempest_Attack":1,
+			"wolf_Assault":10,
+			"fallback":{"combatSmall":1},
+		},
+	
+		"escortSmall":{
+			"wolf_CS":10,
+			"lasher_d_CS":10,
+			"wolf_d_Attack":10,
+			"lasher_PD":10,
+			"omen_PD":1,
+			"monitor_Escort":1,
+			"wolf_PD":2,
+			"centurion_Assault":10,
+			"afflictor_Strike":1,
+			"shade_Assault":1,
+			"fallback":{"combatSmall":1},
+		},
+		"escortMedium":{
+			"enforcer_d_Strike":8,
+			"hammerhead_d_CS":10,
+			"sunder_d_Assault":10,
+			"buffalo2_FS":10,
+			"enforcer_Escort":8,
+			"enforcer_Assault":8,
+			"fallback":{"combatMedium":1},
+		},
+		
+		"combatSmall":{
+			"lasher_d_CS":10,
+			"wolf_d_Attack":10,
+			"lasher_CS":10,
+			"lasher_Assault":10,
+			"vigilance_Standard":10,
+			"brawler_Assault":10,
+			"hermes_FS":1,
+			"fallback":{"escortSmall":1},
+		},
+		"combatMedium":{
+			"enforcer_d_Strike":10,
+			"hammerhead_d_CS":10,
+			"sunder_d_Assault":10,
+			"buffalo2_FS":10,
+			"enforcer_Assault":10,
+			"enforcer_CS":10,
+			"enforcer_Balanced":10,
+			"enforcer_Outdated":10,
+			"enforcer_Elite":3,
+			"hammerhead_Balanced":10,
+			"hammerhead_Elite":10,
+			"sunder_Assault":10,
+			"sunder_CS":10,
+			"medusa_Attack":1,
+			"fallback":{"combatSmall":2},
+		},
+		"combatLarge":{
+			"falcon_d_CS":20,
+			"eagle_d_Assault":10,
+			"dominator_d_Assault":10,
+			"falcon_Attack":10,
+			"falcon_CS":10,
+			"eagle_Assault":10,
+			"eagle_Balanced":10,
+			"apogee_Balanced":10,
+			"gryphon_Standard":3,
+			"gryphon_FS":2,
+			"dominator_Assault":7,
+			"dominator_Support":7,
+			"dominator_Outdated":7,
+			"dominator_AntiCV":7,
+			"aurora_Assault":1,
+			"doom_Strike":1,
+			"fallback":{"combatMedium":2},
+		},
+		"combatCapital":{
+			"fallback":{"combatLarge":2},
+		},
+		
+		
+		# hybrid ships with good combat and cargo capacity
+		"combatFreighterSmall":{
+			"hound_d_Standard":7,
+			"cerberus_d_Standard":7,
+			"hound_Standard":10,
+			"shepherd_Frontier":15,
+			"cerberus_Standard":3,
+			"cerberus_Hardened":3,
+			"cerberus_Shielded":3,
+			"wayfarer_Standard":15,
+			"fallback":{"freighterSmall":1},
+		},
+		"combatFreighterMedium":{
+			"mule_d_Standard":10,
+			"mule_Standard":10,
+			"fallback":{"combatFreighterSmall":2},
+		},
+		"combatFreighterLarge":{
+			"venture_Balanced":10,
+			"fallback":{"combatFreighterMedium":2},
+		},
+		
+		"civilianRandom":{
+			"mercury_d_Standard":10,
+			"hermes_d_Standard":10,
+			"kite_Standard":10,
+			"mercury_Standard":8,
+			"mercury_FS":3,
+			"hermes_Standard":8,
+			"hermes_FS":4,
+			"starliner_Standard":10,
+			"nebula_Standard":10,
+			"mudskipper_Standard":10,
+			"colossus_Standard":1,
+			"fallback":{"freighterSmall":1},
+		},
+	
+	
+		# carriers
+		"carrierSmall":{
+			"condor_Strike":5,
+			"condor_Attack":5,
+			"condor_Support":5,
+			"gemini_Standard":10,
+			"drover_Strike":5,
+			"fallback":{"carrierMedium":0.5},
+		},
+		"carrierMedium":{
+			"heron_Strike":10,
+			"heron_Attack":10,
+			"mora_Assault":7,
+			"mora_Support":7,
+			"mora_Strike":7,
+			"drover_Strike":10,
+			"fallback":{"carrierSmall":2},
+		},
+		"carrierLarge":{
+			"fallback":{"carrierMedium":2},
+		},
+	
+		# freighters and such
+		"freighterSmall":{
+			"hermes_d_Standard":10,
+			"hermes_Standard":8,
+			"hermes_FS":4,
+			"fallback":{"freighterMedium":0.5},
+		},
+		"freighterMedium":{
+			"tarsus_d_Standard":10,
+			"buffalo_d_Standard":10,
+			"tarsus_Standard":10,
+			"buffalo_Standard":10,
+			"colossus_Standard":2,
+			"fallback":{"freighterSmall":2},
+		},
+		"freighterLarge":{
+			"colossus_Standard":10,
+			"atlas_Standard":10,
+			"fallback":{"freighterMedium":2},
+		},
+		
+		"tankerSmall":{
+			"dram_Light":10,
+			"fallback":{"tankerMedium":0.5},
+		},
+		"tankerMedium":{
+			"phaeton_Standard":10,
+			"fallback":{"tankerSmall":2},
+		},
+		"tankerLarge":{
+			"prometheus_Super":10,
+			"fallback":{"tankerMedium":2},
+		},
+		
+		"personnelSmall":{
+			"mercury_d_Standard":10,
+			"mudskipper_Standard":20,
+			"kite_Stock":1,
+			"mercury_Standard":8,
+			"mercury_FS":3,
+			"fallback":{"personnelMedium":0.5},
+		},
+		"personnelMedium":{
+			"valkyrie_Elite":3,
+			"nebula_Standard":10,
+			"fallback":{"personnelSmall":2},
+		},
+		"personnelLarge":{
+			"starliner_Standard":10,
+			"fallback":{"personnelMedium":2},
+		},
+		
+		# utility ships
+		"tug":{
+			"ox_Standard":10,
+			"fallback":{"utility":1},
+		},
+		"crig":{
+			"crig_Standard":10,
+			"fallback":{"utility":1},
+		},
+		"utility":{
+			"crig_Standard":10,
+			"ox_Standard":3,
+		},
+	},
+	"traits":{
+		"captain":{
+			"timid":3,
+			"cautious":5,
+			"steady":5,
+			"aggressive":5,
+			"reckless":1,
+		},
+	},
+	"doctrine":{
+		# ship distribution
+		## tending toward small & defensive
+		"small":8,
+		"fast":4,
+		"medium":12,
+		"large":4,
+		"capital":1,
+		
+		# as fraction of combat ships of same size
+		"escortSmallFraction":1,
+		"escortMediumFraction":1,
+		
+		## poorly armed
+		"combatFreighterProbability":0.67,
+		
+		## poor access to capital ships
+		"minPointsForCombatCapital":30,
+		"minPointsForLargeCarrier":30,
+		
+		## slight preference for carriers
+		"smallCarrierProbability":0.30,
+		"mediumCarrierProbability":0.30,
+		"largeCarrierProbability":0.30,
+		
+		# officers
+		## fewer officers, less training
+		"officersPerPoint":0.20,
+		"officerLevelPerPoint":0.18,
+		"officerLevelBase":4,
+		"officerLevelVariance":0.2,
+		
+		"commanderSkillsPerLevel":0.2,
+		"commanderSkillChance":0.3,
+		"commanderSkillLevelPerLevel":0.15,
+		"commanderSkills":{
+			"officer_management":10,
+			"coordinated_maneuvers":10,
+			"fighter_doctrine":10,
+			"electronic_warfare":10,
+		},
+	},
+},	

@@ -1,0 +1,46 @@
+{
+    "displayName": "Attack",
+    "fluxCapacitors": 17,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "medusa",
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 1,
+    "variantId": "medusa_Attack",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "amblaster",
+                "WS 003": "amblaster"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 008": "sabot",
+                "WS 009": "sabot"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "pulselaser",
+                "WS 007": "pulselaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "pdlaser",
+                "WS 004": "pdlaser",
+                "WS 005": "pdlaser"
+            }
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "displayName": "Fire Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 13,
+    "goalVariant": true,
+    "hullId": "gryphon",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "gryphon_FS",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS 001": "squall"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 008": "pilum",
+                "WS 009": "salamanderpod"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 010": "harpoon",
+                "WS 011": "harpoon",
+                "WS 012": "harpoon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "heavyac",
+                "WS 003": "lightneedler",
+                "WS 004": "lightneedler",
+                "WS 005": "lightneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "vulcan",
+                "WS 007": "vulcan"
+            }
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+	"baseHullId":"kite",
+	"skinHullId":"kite_hegemony",
+	"hullName":"Kite (A)",
+	"fleetPoints":4,
+	"ordnancePoints":32,
+	"descriptionId":"kite",  # optional
+	"descriptionPrefix":"This ship is on the Hegemony auxiliary list and as such its systems have been upgraded to military standard and a rigorous schedule of servicing enforced with the expectation that it can be pressed into military service during emergencies.",
+	"spriteName":"graphics/ships/aeroshuttle/aeroshuttle_hegemony.png",
+	"baseValueMult":1.5,
+	"removeHints":[CIVILIAN],
+	"addHints":[],
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["civgrade"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInMods":["heg_militarized"],
+	"builtInWeapons":{
+    },
+}

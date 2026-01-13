@@ -1,0 +1,27 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 11,
+    "goalVariant": true,
+    "hullId": "gemini",
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 0.75,
+    "variantId": "gemini_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS 003": "pilum"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "dualflak",
+                "WS 002": "dualflak"
+            }
+        }
+    ],
+    "wings": ["gladius_wing"]
+}

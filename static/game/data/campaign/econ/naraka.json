@@ -1,0 +1,36 @@
+{
+	"starSystem":"naraka",
+	"markets":[
+		{
+			"entities":["yama"],
+			"faction":"hegemony",
+			"size":6,
+			"startingConditions":[
+				"arid",
+				"spaceport",	
+				"ore_refining_complex",
+				"light_industrial_complex",
+				"population_6",
+				"farmland_poor",
+				"habitable",
+			],
+		},
+		{
+			"entities":["nachiketa"],
+			"faction":"hegemony",
+			"size":5,
+			"startingConditions":[
+				"military_base",
+				"outpost",
+				"population_5",
+				"antimatter_fuel_production",
+				"no_atmosphere",
+				"ore_sparse",
+			],
+		},
+	],
+	
+}
+
+
+

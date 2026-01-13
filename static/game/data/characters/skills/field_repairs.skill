@@ -1,0 +1,32 @@
+{
+	"id":"field_repairs",
+	"governingAptitude":"industry",
+	"effectGroups":[
+		{
+			"name":"Level 1",
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.FieldRepairs$Level1"},
+				{"type":"FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.FieldRepairs$Level1B"},
+			]
+		},
+		{
+			"name":"Level 2",
+			"requiredSkillLevel":2,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"ALL_SHIPS_IN_FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.FieldRepairs$Level2"},
+			]
+		},
+		{
+			"name":"Level 3",
+			"requiredSkillLevel":3,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"CHARACTER_STATS", "script":"com.fs.starfarer.api.impl.campaign.skills.FieldRepairs$Level3"},
+				{"type":"ALL_SHIPS_IN_FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.FieldRepairs$Level3B"},
+			]
+		},
+	],
+}

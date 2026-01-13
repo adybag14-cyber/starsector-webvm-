@@ -1,0 +1,17 @@
+{
+	"baseHullId":"shade",
+	"skinHullId":"shade_d_pirates",
+	"hullName":"Shade (P)",
+	"descriptionId":"shade",
+	"descriptionPrefix":"After the Second AI War, much of the TriTachyon phase fleet was irreperably damaged or otherwise decommissioned due to treaty conditions. Many of these D-grade phase ships were sold to disreputable elements such as black marketeers and pirates who promptly put them back into service.",
+	"ordnancePoints":35,
+	"baseValueMult":.8,
+	"spriteName":"graphics/ships/shade/shade_d_pirates.png",
+	"removeWeaponSlots":["WS 003", "WS 005"], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInMods":["degraded_engines","faulty_grid"],
+	"builtInWeapons":{
+    },
+}

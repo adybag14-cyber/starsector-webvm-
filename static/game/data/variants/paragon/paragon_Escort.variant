@@ -1,0 +1,65 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 28,
+    "fluxVents": 50,
+    "hullId": "paragon",
+    "hullMods": [
+        "stabilizedshieldemitter",
+        "hardenedshieldemitter",
+        "fluxbreakers",
+        "fluxdistributor",
+        "autorepair"
+    ],
+    "permaMods": [],
+    "quality": 1,
+    "variantId": "paragon_Escort",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "tachyonlance",
+                "WS 002": "tachyonlance"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 012": "heatseeker",
+                "WS 014": "heatseeker",
+                "WS 018": "heatseeker",
+                "WS 020": "heatseeker"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "gravitonbeam",
+                "WS 006": "gravitonbeam",
+                "WS 009": "pdlaser",
+                "WS 010": "pdlaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "guardian",
+                "WS 004": "guardian",
+                "WS 007": "flak",
+                "WS 008": "flak",
+                "WS 011": "taclaser",
+                "WS 013": "pdlaser",
+                "WS 015": "pdlaser",
+                "WS 016": "pdlaser",
+                "WS 017": "taclaser",
+                "WS 019": "pdlaser",
+                "WS 021": "pdlaser",
+                "WS 022": "pdlaser",
+                "WS 023": "pdburst"
+            }
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "displayName": "Commandeered",
+    "fluxCapacitors": 7,
+    "fluxVents": 10,
+    "hullId": "brawler",
+    "hullMods": ["blast_doors"],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "brawler_Starting",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "chaingun",
+                "WS 002": "chaingun"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 003": "annihilator",
+                "WS 004": "annihilator"
+            }
+        }
+    ]
+}

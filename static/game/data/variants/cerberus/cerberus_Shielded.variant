@@ -1,0 +1,30 @@
+{
+    "displayName": "Shielded",
+    "fluxCapacitors": 9,
+    "fluxVents": 10,
+    "hullId": "cerberus",
+    "hullMods": ["frontshield"],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "cerberus_Shielded",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 004": "heavymg"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "lightag"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "lightmg",
+                "WS 002": "lightmg"
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "displayName": "Defense",
+    "fluxCapacitors": 0,
+    "fluxVents": 10,
+    "hullId": "warden",
+    "hullMods": [],
+    "quality": 0,
+    "variantId": "warden_Defense",
+    "weaponGroups": [
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 4,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "condor",
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 0.25,
+    "variantId": "condor_Strike",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS 003": "pilum"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "lightmg",
+                "WS 002": "lightmg"
+            }
+        }
+    ],
+    "wings": [
+        "piranha_wing",
+        "piranha_wing"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 17,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "mora",
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "mora_Strike",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "lightac",
+                "WS 005": "vulcan",
+                "WS 007": "lightac",
+                "WS 012": "vulcan",
+                "WS 013": "lightac"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 003": "sabotpod",
+                "WS 004": "sabotpod"
+            }
+        }
+    ],
+    "wings": [
+        "hoplon_wing",
+        "hoplon_wing",
+        "broadsword_wing"
+    ]
+}

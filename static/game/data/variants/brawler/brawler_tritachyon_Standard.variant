@@ -1,0 +1,28 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 7,
+    "fluxVents": 10,
+    "hullId": "brawler_tritachyon",
+    "hullMods": ["fluxdistributor"],
+    "permaMods": [],
+    "quality": 0.25,
+    "variantId": "brawler_tritachyon_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "pulselaser",
+                "WS 002": "ionpulser"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 003": "sabot",
+                "WS 004": "sabot"
+            }
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 5,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "starliner",
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "starliner_Standard",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS 001": "lightmg",
+            "WS 002": "lightmg",
+            "WS 003": "lightmg",
+            "WS 004": "lightmg",
+            "WS 005": "vulcan",
+            "WS 006": "vulcan"
+        }
+    }]
+}

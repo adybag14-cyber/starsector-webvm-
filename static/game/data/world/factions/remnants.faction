@@ -1,0 +1,159 @@
+{
+	id:"remnant",
+	"displayName":"Remnants",
+	"displayNameWithArticle":"the remnant",
+	"displayNameLong":"AI Remnants",
+	"displayNameLongWithArticle":"the AI Remnants",
+	"entityNamePrefix":"Remnant",
+	"personNamePrefix":"",
+	"personNamePrefixAOrAn":"a",
+	"displayNameIsOrAre":"are",
+	
+	"logo":"graphics/factions/ai_remnant.png",
+	"crest":"graphics/factions/crest_ai_remnant.png",
+	"shipNamePrefix":"TTDS",
+	
+	"color":[70,255,235,255],
+	"baseUIColor":[70,255,235,255],
+	#"color":[100,100,100,255],
+	#"baseUIColor":[155,155,155,255],
+	
+	#"darkUIColor":[31,94,112,175],
+	#"gridUIColor":[70,200,255,75],
+	
+	"showInIntelTab":false,
+	
+	"shipNameSources":{
+		"MERCANTILE":1,
+		"SPACE":1,
+		"DERELICT_DRONE":1,
+	},
+	"names":{
+		"ai":1,
+	},
+	"illegalCommodities":[
+	],
+	"music":{
+		"encounter_hostile":"music_tritach_encounter_hostile",
+	},	
+	#"internalComms":"hegemony_internal",
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/portrait_ai1.png",
+			"graphics/portraits/portrait_ai2.png",
+			"graphics/portraits/portrait_ai3.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portrait_ai1.png",
+			"graphics/portraits/portrait_ai2.png",
+			"graphics/portraits/portrait_ai3.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+		},
+		"posts":{
+		},
+	},
+	"custom":{
+		"engageWhenEvenStrength":true,
+		"allowsTransponderOffTrade":true, # to prevent cargoscan dialog from "patrols"
+	},	
+	"shipRoles":{
+		"fastAttack":{
+			"fallback":{"combatSmall":1},
+		},
+	
+		"escortSmall":{
+			"glimmer_Support":10,
+			"fallback":{"combatSmall":1},
+		},
+		"escortMedium":{
+			"fallback":{"combatMedium":1},
+		},
+		
+		"combatSmall":{
+			"glimmer_Assault":10,
+			"lumen_Standard":10,
+			"fallback":{"escortSmall":1},
+		},
+		"combatMedium":{
+			"fulgent_Assault":10,
+			"fulgent_Support":10,
+			"fallback":{"combatSmall":2},
+		},
+		"combatLarge":{
+			"brilliant_Standard":10,
+			"fallback":{"combatMedium":2},
+		},
+		"combatCapital":{
+			"fallback":{"combatLarge":2},
+		},
+		"carrierSmall":{
+			"fallback":{"carrierMedium":0.5},
+		},
+		"carrierMedium":{
+			"scintilla_Strike":10,
+			"scintilla_Support":10,
+			"fallback":{"carrierSmall":2},
+		},
+		"carrierLarge":{
+			"fallback":{"carrierMedium":2},
+		},
+		"remnantStation1":{
+			"remnant_station2_Standard":10,
+		},
+	},
+	"fleetTypeNames":{
+		"patrolSmall":"Fragment",
+		"patrolMedium":"Sub-Ordo",
+		"patrolLarge":"Ordo",
+		"battlestation":"Battlestation",
+	},
+	"doctrine":{
+		# ship distribution
+		"small":8,
+		"fast":4,
+		"medium":12,
+		"large":6,
+		"capital":3,
+		
+		# as fraction of combat ships of same size
+		"escortSmallFraction":0,
+		"escortMediumFraction":0,
+		
+		"combatFreighterProbability":0,
+		
+		"minPointsForCombatCapital":10,
+		"minPointsForLargeCarrier":30,
+		
+		"smallCarrierProbability":0.4,
+		"mediumCarrierProbability":0.4,
+		"largeCarrierProbability":0.4,
+		
+		# officers
+		"officersPerPoint":0.3,
+		"officerLevelPerPoint":0.25,
+		"officerLevelBase":5,
+		"officerLevelVariance":0,
+		
+		"commanderSkillsPerLevel":0.2,
+		"commanderSkillChance":0.25,
+		"commanderSkillLevelPerLevel":0.2,
+		"commanderSkills":{
+			"officer_management":10,
+			"coordinated_maneuvers":10,
+			"fighter_doctrine":10,
+			"electronic_warfare":10,
+		},
+	},	
+	"traits":{
+		"captain":{
+			"timid":0,
+			"cautious":0,
+			"steady":0,
+			"aggressive":0,
+			"reckless":10,
+		},
+	},
+},

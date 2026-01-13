@@ -1,0 +1,61 @@
+{
+	"starSystem":"zagan",
+	"markets":[
+		{
+			"entities":["mazalot"],
+			"faction":"persean",
+			"size":7,
+			"startingConditions":[
+				"habitable",
+				"arid",
+				"spaceport",
+				"hot",
+				"outpost",
+				"light_industrial_complex",
+				#"frontier",
+				"population_7",
+				"luddic_majority",
+				#"hydroponics_complex",
+				"farmland_adequate",
+			],
+		},
+		{
+			"entities":["ilm"],
+			"faction":"independent",
+			"size":5,
+			"startingConditions":[
+				"volatiles_plentiful",
+				#"volatiles_complex",
+				"volatiles_complex",
+				"light_industrial_complex",
+				"light_industrial_complex",
+				#"dissident",
+				"cold",
+				"thin_atmosphere",
+				"tectonic_activity",
+				"population_5",
+				"spaceport",
+				"vice_demand",
+			],
+		},
+		{
+			"entities":["yesod"],
+			"faction":"persean",
+			"size":5,
+			"startingConditions":[
+				"military_base",
+				"headquarters",
+				"low_gravity",
+				"cold",
+				"free_market",
+				"antimatter_fuel_production",
+				"population_5",
+			],
+		},
+	],
+
+
+}
+
+
+

@@ -1,0 +1,34 @@
+{
+    "displayName": "Experimental",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "scarab",
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 1,
+    "variantId": "scarab_Experimental",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "taclaser",
+                "WS 002": "ioncannon",
+                "WS 003": "ioncannon",
+                "WS 005": "taclaser",
+                "WS 010": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "pdlaser",
+                "WS 007": "pdlaser",
+                "WS 008": "pdlaser",
+                "WS 009": "pdlaser"
+            }
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+	"starSystem":"westernesse",
+	"markets":[
+		{
+			"entities":["athulf"],
+			"faction":"persean",
+			"size":4,
+			"startingConditions":[
+				"frontier",
+				"hot",
+				#"ore_complex",
+				"ore_complex",
+				"ore_rich",
+				"population_4",
+				"no_atmosphere",
+			],
+		},
+		{
+			"entities":["fikenhild"],
+			"faction":"persean",
+			"size":6,
+			"startingConditions":[
+				"habitable",
+				"water",
+				"urbanized_polity",
+				"spaceport",
+				"regional_capital",
+				"hot",
+				"organics_complex",
+				"water_surface",
+				"population_6",
+				"aquaculture",
+				"hydroponics_complex",
+			],
+		},
+		{
+			"entities":["suddene"],
+			"faction":"persean",
+			"size":5,
+			"startingConditions":[
+				"habitable",
+				"barren_marginal",
+				"light_industrial_complex",
+				"ore_complex",
+				"frontier",
+				"ore_refining_complex",
+				"population_5",
+				"thin_atmosphere",
+			],
+		},
+		{
+			"entities":["ailmar"],
+			"faction":"independent",
+			"size":5,
+			"startingConditions":[
+				"habitable",
+				"tundra",
+				"volatiles_diffuse",
+				"volatiles_complex",
+				"farmland_poor",
+				"light_industrial_complex",
+				"dissident",
+				"cold",
+				"population_5",
+			],
+		},
+	],
+
+
+}
+
+
+

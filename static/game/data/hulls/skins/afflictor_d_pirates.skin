@@ -1,0 +1,18 @@
+{
+	"baseHullId":"afflictor",
+	"skinHullId":"afflictor_d_pirates",
+	"hullName":"Afflictor (P)",
+	"descriptionId":"wolf",
+	"descriptionPrefix":"After the Second AI War, much of the TriTachyon phase fleet was irreperably damaged or otherwise decommissioned due to treaty conditions. Many of these D-grade phase ships were sold to disreputable elements such as black marketeers and pirates who promptly put them back into service.",
+	"fleetPoints":10,
+	"ordnancePoints":40,
+	"baseValueMult":.8,
+	"spriteName":"graphics/ships/afflictor/afflictor_d_pirates.png",
+	"removeWeaponSlots":["WS 001", "WS 004"], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInMods":["unstable_coils","degraded_engines","fragile_subsystems"],
+	"builtInWeapons":{
+    },
+}

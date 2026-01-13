@@ -1,0 +1,42 @@
+{
+	"starSystem":"tyle",
+	"markets":[
+		{
+			"entities":["cibola"],
+			"faction":"persean",
+			"size":5,
+			"startingConditions":[
+				"desert",
+				"spaceport",	
+				"organics_complex",
+				"ore_refining_complex",
+				"light_industrial_complex",
+				"population_5",
+				"farmland_poor",
+				"habitable",
+				"organics_trace",
+			],
+		},
+		{
+			"entities":["madeira"],
+			"faction":"persean",
+			"size":6,
+			"startingConditions":[
+				"tundra",
+				"military_base",
+				"population_6",
+				"volatiles_complex",
+				"antimatter_fuel_production",
+				"farmland_poor",
+				"habitable",
+				"volatiles_diffuse",
+				"regional_capital",
+			],
+		},
+	],
+
+
+}
+
+
+

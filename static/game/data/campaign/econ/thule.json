@@ -1,0 +1,60 @@
+{
+	"starSystem":"thule",
+	"markets":[
+		{
+			"entities":["kazeron"],
+			"faction":"persean",
+			"size":7,
+			"startingConditions":[
+				"spaceport",
+				"hot",
+				"autofac_heavy_industry",
+				#"autofac_heavy_industry",
+				"military_base",
+				"population_7",
+				#"ore_complex",
+				"urbanized_polity",
+				#"headquarters",
+				"regional_capital",
+				"ore_rich",
+				"rare_ore_moderate",
+			],
+		},
+		{
+			"entities":["eldfell"],
+			"faction":"independent",
+			"size":5,
+			"startingConditions":[
+				"no_atmosphere",
+				#"ore_complex",
+				"ore_complex",
+				"ore_refining_complex",
+				#"hydroponics_complex",
+				"hydroponics_complex",
+				"population_5",
+				#"frontier",
+				#"dissident",
+			],
+		},
+		{
+			"entities":["thule_pirate_station"],
+			"faction":"pirates",
+			"size":4,
+			"startingConditions":[
+				"volatiles_complex",
+				"volatiles_diffuse",
+				"free_market",
+				"orbital_station",
+				"outpost",
+				"vice_demand",
+				"population_4",
+				"cold",
+			],
+		},
+	],
+
+
+}
+
+
+

@@ -1,0 +1,44 @@
+{
+	"starSystem":"canaan",
+	"markets":[
+		{
+			"entities":["gilead"],
+			"faction":"luddic_church",
+			"size":7,
+			"startingConditions":[
+				"terran",
+				#"organics_complex",
+				#"ore_complex",
+				"cottage_industry",
+				"luddic_majority",
+				"population_7",
+				"regional_capital",
+				"habitable",
+				"mild_climate",
+				"ore_moderate",
+				"farmland_rich",
+				"organics_abundant",
+				"ruins_widespread",
+			],
+		},
+		{
+			"entities":["asher"],
+			"faction":"luddic_church",
+			"size":4,
+			"startingConditions":[
+				#"outpost",
+				"population_4",
+				"ore_refining_complex",
+				"ore_complex",
+				"rare_ore_moderate",
+				"ore_abundant",
+				"thin_atmosphere",
+				"extreme_weather",
+			],
+		},
+	],
+	
+}
+
+
+

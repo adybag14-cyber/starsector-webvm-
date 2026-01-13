@@ -1,0 +1,42 @@
+{
+	"starSystem":"yma",
+	"markets":[
+		{
+			"entities":["qaras"],
+			"faction":"pirates",
+			"size":5,
+			"startingConditions":[
+				"tundra",
+				#"frontier",
+				"spaceport",
+				"military_base",
+				#"hydroponics_complex",
+				"hydroponics_complex",
+				"population_5",
+				"habitable",
+				"volatiles_diffuse",
+				"organics_common",
+				"farmland_poor",
+			],
+		},
+		{
+			"entities":["salamanca"],
+			"faction":"persean",
+			"size":5,
+			"startingConditions":[
+				"dense_atmosphere",
+				"organics_complex",
+				"population_5",
+				"cold",
+				"extreme_weather",
+				#"outpost",
+				"organized_crime",
+			],
+		},
+	],
+
+
+}
+
+
+

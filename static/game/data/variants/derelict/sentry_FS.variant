@@ -1,0 +1,15 @@
+{
+    "displayName": "Fire Support",
+    "fluxCapacitors": 5,
+    "fluxVents": 5,
+    "hullId": "sentry",
+    "hullMods": [],
+    "quality": 0,
+    "variantId": "sentry_FS",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+        }
+    }]
+}

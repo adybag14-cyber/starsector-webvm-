@@ -1,0 +1,33 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "hullId": "remnant_weapon_platform2",
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "remnant_weapon_platform2_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "autopulse"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "pdburst",
+                "WS 005": "pdburst"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "pulselaser",
+                "WS 003": "ionpulser"
+            }
+        }
+    ]
+}

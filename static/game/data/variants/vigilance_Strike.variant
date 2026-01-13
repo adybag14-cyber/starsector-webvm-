@@ -1,0 +1,23 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "vigilance",
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "vigilance_Strike",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS 002": "typhoon"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "ionbeam"}
+        }
+    ]
+}

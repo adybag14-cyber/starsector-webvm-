@@ -1,0 +1,352 @@
+{
+	"id":"luddic_church",
+	"color":[5,115,10,255],
+	
+	"baseUIColor":[75,200,0,255],
+	"darkUIColor":[32,85,0,175],
+	"gridUIColor":[95,255,0,75],
+	
+	#"displayName":"Church of Galactic Redemption",
+	#"displayNameWithArticle":"the Church of Galactic Redemption",
+	"displayName":"Luddic Church",
+	"displayNameWithArticle":"the Luddic Church",
+	"displayNameLong":"Church of Galactic Redemption",
+	"displayNameLongWithArticle":"the Church of Galactic Redemption",
+	"logo":"graphics/factions/luddic_church.png",
+	"crest":"graphics/factions/crest_luddic_church.png",
+	"shipNamePrefix":"CGR",
+	"shipNameSources":{
+		"CHURCH":1,
+		"ABRAHAMIC":1,
+	},
+	"names":{
+		"fringe":1,
+		"modern":1,
+		"world":1,
+		"future":1,
+		"luddic":2,
+	},
+	"hullMods":[
+		"frontshield",
+		"turretgyros",
+		"armoredweapons",
+		"auxiliarythrusters",
+		"blast_doors",
+		"dedicated_targeting_core",
+		"magazines",
+		"missleracks",
+		"hardened_subsystems",
+		"heavyarmor",
+		"insulatedengine",
+		"pointdefenseai",
+		"reinforcedhull",
+		"unstable_injector",
+		"expanded_deck_crew",
+		"converted_hangar",
+	],
+	"illegalCommodities":[
+		"drugs",
+		"organs",
+		"luxury_goods",
+		"ai_cores",
+	],
+	"music":{
+		"theme":"music_luddite_market_neutral",
+		"market_neutral":"music_luddite_market_neutral",
+		"market_hostile":"music_luddite_market_hostile",
+		"market_friendly":"music_luddite_market_friendly",
+		"encounter_neutral":"music_luddite_encounter_neutral",
+		"encounter_hostile":"music_luddite_encounter_hostile",
+		"encounter_friendly":"music_luddite_encounter_friendly",
+	},
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/portrait_mercenary01.png",
+			"graphics/portraits/portrait_mercenary03.png",
+			"graphics/portraits/portrait12.png",
+			"graphics/portraits/portrait15.png",
+			"graphics/portraits/portrait17.png",
+			"graphics/portraits/portrait18.png",
+			"graphics/portraits/portrait20.png",
+			"graphics/portraits/portrait_luddic00.png",
+			"graphics/portraits/portrait_luddic02.png",
+			"graphics/portraits/portrait_luddic04.png",
+			"graphics/portraits/portrait_luddic05.png",
+			"graphics/portraits/portrait_luddic06.png",
+			"graphics/portraits/portrait36.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portrait_mercenary02.png",
+			"graphics/portraits/portrait14.png",
+			"graphics/portraits/portrait16.png",
+			"graphics/portraits/portrait21.png",
+			"graphics/portraits/portrait22.png",
+			"graphics/portraits/portrait27.png",
+			"graphics/portraits/portrait28.png",
+			"graphics/portraits/portrait29.png",
+			"graphics/portraits/portrait_luddic01.png",
+			"graphics/portraits/portrait_luddic03.png",
+			"graphics/portraits/portrait_luddic07.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+			"spaceCommander":{"name":"Deacon-Captain"},
+		},
+		"posts":{
+			"patrolCommander":{"name":"Deacon-Captain"},
+			"fleetCommander":{"name":"Priest-Commander"},
+			"baseCommander":{"name":"Bishop-Governor"},
+			"administrator":{"name":"Sub-presbyter Orbis"},
+		},
+	},
+	"custom":{
+		"offersCommissions":true,
+		"engagesInHostilities":true,
+		"buysAICores":true,
+		"AICoreValueMult":0.1,
+		"AICoreRepMult":3,
+		"buysSurveyData":true,
+	},
+	"shipRoles":{
+		"fastAttack":{
+			"lasher_luddic_church_Standard":10,
+			"hound_luddic_church_Standard":10,
+			"wolf_Assault":2,
+			"fallback":{"combatSmall":1},
+		},
+	
+		"escortSmall":{
+			"lasher_luddic_church_Standard":10,
+			"lasher_PD":10,
+			"monitor_Escort":2,
+			"wolf_PD":10,
+			"vigilance_FS":10,
+			"fallback":{"combatSmall":1},
+		},
+		"escortMedium":{
+			"enforcer_Escort":10,
+			"enforcer_Balanced":10,
+			"enforcer_Outdated":10,
+			"enforcer_CS":10,
+			"hammerhead_Balanced":10,
+			#"enforcer_Elite":10,
+			#"hammerhead_Elite":10,
+			"fallback":{"combatMedium":1},
+		},
+		
+		"combatSmall":{
+			"hound_luddic_church_Standard":10,
+			"lasher_luddic_church_Standard":10,
+			"lasher_Assault":10,
+			"vigilance_Standard":10,
+			"vigilance_FS":10,
+			"vigilance_Strike":10,
+			"brawler_Assault":10,
+			"mudskipper2_Hellbore":3,
+			"mudskipper2_CS":1,
+			"fallback":{"escortSmall":1},
+		},
+		"combatMedium":{
+			"enforcer_Assault":10,
+			"enforcer_Balanced":10,
+			"enforcer_Outdated":10,
+			"enforcer_CS":10,
+			"hammerhead_Balanced":7,
+			"hammerhead_Elite":7,
+			"hammerhead_d_CS":7,
+			"enforcer_Elite":10,
+			"sunder_CS":7,
+			"sunder_Assault":7,
+			"fallback":{"combatSmall":2},
+		},
+		"combatLarge":{
+			"falcon_Attack":6,
+			"falcon_CS":6,
+			"eagle_Assault":6,
+			"eagle_Balanced":6,
+			"dominator_Assault":8,
+			"dominator_Support":8,
+			"dominator_Outdated":16,
+			"colossus2_Pather":16,
+			"fallback":{"combatMedium":2},
+		},
+		"combatCapital":{
+			"onslaught_Standard":8,
+			"onslaught_Outdated":16,
+			"onslaught_Elite":4,
+			"fallback":{"combatLarge":2},
+		},
+		
+		
+		# hybrid ships with good combat and cargo capacity
+		"combatFreighterSmall":{
+			"hound_luddic_church_Standard":10,
+			"shepherd_Frontier":10,
+			"cerberus_Standard":4,
+			"cerberus_Hardened":4,
+			"cerberus_Shielded":4,
+			"wayfarer_Standard":10,
+			"fallback":{"freighterSmall":1},
+		},
+		"combatFreighterMedium":{
+			"mule_d_Standard":10,
+			"mule_Standard":10,
+			"fallback":{"combatFreighterSmall":2},
+		},
+		"combatFreighterLarge":{
+			"venture_Balanced":10,
+			"fallback":{"combatFreighterMedium":2},
+		},
+		
+		"civilianRandom":{
+			"mercury_d_Standard":10,
+			"hermes_d_Standard":10,
+			"mercury_Standard":8,
+			"mercury_FS":4,
+			#"hermes_Standard":8,
+			#"hermes_FS":2,
+			"starliner_Standard":10,
+			"nebula_Standard":10,
+			"mudskipper_Standard":10,
+			"colossus_Standard":1,
+			"fallback":{"freighterSmall":1},
+		},
+	
+		# carriers
+		"carrierSmall":{
+			"condor_Strike":5,
+			"condor_Attack":5,
+			"condor_Support":5,
+			"gemini_Standard":10,
+			"fallback":{"carrierMedium":0.5},
+		},
+		"carrierMedium":{
+			"mora_Assault":7,
+			"mora_Support":7,
+			"mora_Strike":7,						
+			"fallback":{"carrierSmall":2},
+		},
+		"carrierLarge":{
+			"legion_Escort":2,
+			"legion_Assault":2,
+			"legion_Strike":2,
+			"legion_FS":2,
+			"fallback":{"carrierMedium":2},
+		},
+	
+		# freighters and such
+		"freighterSmall":{
+			"hermes_d_Standard":10,
+			"hermes_Standard":8,
+			"hermes_FS":2,
+			"fallback":{"freighterMedium":0.5},
+		},
+		"freighterMedium":{
+			"tarsus_d_Standard":10,
+			"buffalo_d_Standard":10,
+			"tarsus_Standard":10,
+			"buffalo_luddic_church_Standard":10,
+			"colossus_Standard":2,
+			"fallback":{"freighterSmall":2},
+		},
+		"freighterLarge":{
+			"colossus_Standard":4,
+			"atlas_Standard":10,
+			"fallback":{"freighterMedium":2},
+		},
+		
+		"tankerSmall":{
+			"dram_Light":10,
+			"fallback":{"tankerMedium":0.5},
+		},
+		"tankerMedium":{
+			"phaeton_Standard":10,
+			"fallback":{"tankerSmall":2},
+		},
+		"tankerLarge":{
+			"prometheus_Super":10,
+			"fallback":{"tankerMedium":2},
+		},
+		
+		"personnelSmall":{
+			"mercury_d_Standard":10,
+			"mercury_Standard":8,
+			"mercury_FS":3,
+			"mudskipper_Standard":15,
+			"fallback":{"personnelMedium":0.5},
+		},
+		"personnelMedium":{
+			"valkyrie_Elite":5,
+			"nebula_Standard":1,
+			"fallback":{"personnelSmall":2},
+		},
+		"personnelLarge":{
+			"fallback":{"personnelMedium":2},
+		},
+		
+		# utility ships
+		"tug":{
+			"ox_Standard":10,
+			"fallback":{"utility":1},
+		},
+		"crig":{
+			"crig_Standard":10,
+			"fallback":{"utility":1},
+		},
+		"utility":{
+			"crig_Standard":10,
+			"ox_Standard":10,
+		},
+	},
+	"traits":{
+		"captain":{
+			"timid":10,
+			"cautious":10,
+			"steady":10,
+			"aggressive":5,
+			"reckless":1,
+		},
+	},
+	"doctrine":{
+		# ship distribution
+		## more defensive, smaller ships
+		"small":10,
+		"fast":4,
+		"medium":12,
+		"large":4,
+		"capital":1,
+		
+		# as fraction of combat ships of same size
+		"escortSmallFraction":1,
+		"escortMediumFraction":1,
+		
+		## less militarized
+		"combatFreighterProbability":0.25,
+		
+		## fewer capitals
+		"minPointsForCombatCapital":25,
+		"minPointsForLargeCarrier":25,
+		
+		"smallCarrierProbability":0.25,
+		"mediumCarrierProbability":0.25,
+		"largeCarrierProbability":0.25,
+		
+		# officers
+		## slightly lower avg level of officers : the church is not itself militant.
+		"officersPerPoint":0.20,
+		"officerLevelPerPoint":0.2,
+		"officerLevelBase":4,
+		"officerLevelVariance":0.35,
+		
+		"commanderSkillsPerLevel":0.2,
+		"commanderSkillChance":0.3,
+		"commanderSkillLevelPerLevel":0.15,
+		"commanderSkills":{
+			"officer_management":10,
+			"coordinated_maneuvers":0,
+			"fighter_doctrine":10,
+			"electronic_warfare":0,
+		},
+	},
+},

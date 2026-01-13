@@ -1,0 +1,55 @@
+{
+	"starSystem":"aztlan",
+	"markets":[
+		{
+			"entities":["chicomoztoc", "aztlan_starport"],
+			"faction":"hegemony",
+			"size":8,
+			"startingConditions":[
+				"barren_marginal",
+				"urbanized_polity",
+				"autofac_heavy_industry",
+				"ore_refining_complex",
+				"ore_refining_complex",
+				"ore_refining_complex",
+				#"light_industrial_complex",
+				"light_industrial_complex",						
+				"hydroponics_complex",
+				"orbital_station",
+				"organized_crime",
+				"population_8",
+				"thin_atmosphere",
+				"ore_moderate",
+				"rare_ore_sparse",
+				"pollution",
+			],
+		},
+#		{
+#			"entities":["zorrah"],
+#			"faction":"independent",
+#			"size":4,
+#			"startingConditions":[
+#				"ore_complex",
+#				"population_4",
+#				"no_atmosphere",
+#				"ore_abundant",
+#			],
+#		},
+		{
+			"entities":["coatl", "coatl_station"],
+			"faction":"hegemony",
+			"size":5,
+			"startingConditions":[
+				"headquarters",
+				"military_base",
+				#"vice_demand",
+				"orbital_station",
+				"population_5",
+			],
+		},
+	],
+
+}
+
+
+

@@ -1,0 +1,84 @@
+{
+	"starSystem":"valhalla",
+	"markets":[
+#		{
+#			"entities":["ratatosk"],
+#			"faction":"hegemony",
+#			"size":5,
+#			"startingConditions":[
+#				"frontier",
+#				"organized_crime",
+#				"vice_demand",
+#				"autofac_heavy_industry",
+#				"hydroponics_complex",
+#				"ore_refining_complex",
+#				"population_5",
+#				"ruins_scattered",
+#				"no_atmosphere",
+#				"ore_sparse",
+#			],
+#		},
+		{
+			"entities":["raesvelg"],
+			"faction":"hegemony",
+			"size":5,
+			"startingConditions":[
+				"thin_atmosphere",
+				"population_5",
+				"volatiles_complex",
+				"outpost",
+				"volatiles_abundant",
+				"frontier",
+				"vice_demand",
+				"autofac_heavy_industry",
+				"ore_refining_complex",
+				"ruins_scattered",
+			],
+		},
+#		{
+#			"entities":["mimir_platform"],
+#			"faction":"tritachyon",
+#			"size":4,
+#			"parent":"skathi",
+#			"startingConditions":[
+#				"volatiles_complex",
+#				#"volatiles_complex",
+#				"outpost",
+#				"population_4",
+#				"volatiles_plentiful",
+#				"orbital_station",
+#			],
+#		},
+		{
+			"entities":["skathi","mimir_platform"],
+			"faction":"tritachyon",
+			"size":4,
+			"startingConditions":[
+				"volatiles_depot",
+				"free_market",
+				"outpost",
+				"population_4",
+				"volatiles_complex",
+				"volatiles_plentiful",
+				"orbital_station",
+				"cold",
+			],
+		},
+		{
+			"entities":["ragnar_complex"],
+			"faction":"hegemony",
+			"size":5,
+			"startingConditions":[
+				"military_base",
+				"orbital_station",
+				"population_5",
+				"stealth_minefields",
+			],
+		},
+	],
+
+
+}
+
+
+

@@ -1,0 +1,25 @@
+{
+	"starSystem":"algebbar",
+	"markets":[
+		{
+			"entities":["epithany"],
+			"faction":"luddic_path",
+			"size":4,
+			"startingConditions":[
+				"ore_complex",
+				"cottage_industry",
+				"luddic_majority",
+				"population_4",
+				"military_base",
+				"no_atmosphere",
+				"low_gravity",
+				"ore_sparse",
+				"volatiles_trace",
+				"cold",
+			],
+		},
+	],
+}
+
+
+

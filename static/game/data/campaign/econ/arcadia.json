@@ -1,0 +1,49 @@
+{
+	"starSystem":"arcadia",
+	"markets":[
+		{
+			"entities":["nomios"],
+			"faction":"independent",
+			"size":3,
+			"startingConditions":[
+				"cryosanctum",
+				"outpost",
+				"population_3",
+				"thin_atmosphere",
+				"cold",
+				"volatiles_abundant",
+				"organics_trace",
+			],
+		},
+		{
+			"entities":["arcadia_station"],
+			"faction":"hegemony",
+			"size":4,
+			"startingConditions":[
+				"military_base",
+				"volatiles_complex",
+				"orbital_station",
+				"population_4",
+			],
+		},
+		{
+			"entities":["agreus"],
+			"faction":"independent",
+			"size":5,
+			"startingConditions":[
+				"shipbreaking_center",
+				#"ore_refining_complex",
+				"population_5",
+				"ore_sparse",
+				"volatiles_trace",
+				"cold",
+				"no_atmosphere",
+			],
+		},
+	],
+
+
+}
+
+
+

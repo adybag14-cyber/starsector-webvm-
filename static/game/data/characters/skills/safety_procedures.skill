@@ -1,0 +1,36 @@
+{
+	"id":"safety_procedures",
+	"governingAptitude":"industry",
+	"compressHullmods":false,
+	"effectGroups":[
+		{
+			"name":"Level 1",
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"ALL_SHIPS_IN_FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.SafetyProcedures$Level1A"},
+				{"type":"FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.SafetyProcedures$Level1B"},
+			]
+		},
+		{
+			"name":"Level 2",
+			"requiredSkillLevel":2,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"ALL_SHIPS_IN_FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.SafetyProcedures$Level2"},
+				{"type":"ALL_SHIPS_IN_FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.SafetyProcedures$Level3"},
+				{"type":"HULLMOD_UNLOCK", "hullmods":{"solar_shielding":2}},
+			]
+		},
+		{
+			"name":"Level 3",
+			"requiredSkillLevel":3,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"ALL_SHIPS_IN_FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.SafetyProcedures$Level2B"},
+				{"type":"FLEET", "script":"com.fs.starfarer.api.impl.campaign.skills.SafetyProcedures$Level3B"}
+			]
+		},
+	],
+}
+

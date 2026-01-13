@@ -1,0 +1,48 @@
+{
+	"starSystem":"mayasura",
+	"markets":[
+		{
+			"entities":["mairaath"],
+			"faction":"persean",
+			"size":5,
+			"startingConditions":[
+				"habitable",
+				"barren_marginal",
+				"population_5",
+				"extreme_weather",
+				"hot",
+				"ruins_vast",
+				"rural_polity",
+				],
+		},
+		{
+			"entities":["mairaath_abandoned_station2"],
+			"faction":"pirates",
+			"size":4,
+			"startingConditions":[
+				"outpost",
+				"orbital_station",
+				"free_market",
+				"organized_crime",
+				"large_refugee_population",
+				],
+		},
+		{
+			"entities":["port_tse"],
+			"faction":"tritachyon",
+			"size":4,
+			"startingConditions":[
+				"free_market",
+				"military_base", # TODO: mercenary center
+				"ore_complex",
+				"hydroponics_complex",
+				"orbital_station",
+				"population_4",
+			],
+		},	
+	],
+	
+}
+
+
+
