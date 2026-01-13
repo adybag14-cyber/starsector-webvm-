@@ -1,8 +1,6 @@
-jfr
-security
-server
 classlist
 jexec
+jfr
 jrt-fs.jar
 jspawnhelper
 jvm.cfg
@@ -44,4 +42,6 @@ libzip.so
 modules
 psfont.properties.ja
 psfontj2d.properties
+security
+server
 tzdb.dat

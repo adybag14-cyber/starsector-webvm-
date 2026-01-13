@@ -1,6 +1,3 @@
-proj
-scripts
-wpn
 acausaldisruptor.system
 ammofeed.system
 burndrive.system
@@ -30,10 +27,13 @@ maneuveringjets.system
 phasecloak.system
 phaseteleporter.system
 plasmajets.system
+proj
 recalldevice.system
 reservewing.system
+scripts
 ship_systems.csv
 skimmer_drone.system
 targetingfeed.system
 temporalshell.system
 traveldrive.system
+wpn

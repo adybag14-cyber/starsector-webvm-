@@ -311,7 +311,7 @@
 		{
 			var cxConfig = {mounts: mountPoints, networkInterface: networkInterface, experimental: true};
 			if (configObj.memory)
-				cxConfig.memory = 2048 * 1024 * 1024;
+				cxConfig.memory = configObj.memory;
 			cx = await CheerpX.Linux.create(cxConfig);
 		}
 		catch(e)
@@ -336,8 +336,10 @@
 		
 		// Force discovery of the game directory
 		try {
-			await cx.run("/bin/sh", ["-c", "find /web/game -maxdepth 2 > /dev/null"]);
-		} catch (e) {}
+			await cx.run("/bin/sh", ["-c", "sh /web/setup.sh && cd /home/user/starsector && export LD_LIBRARY_PATH=/home/user/starsector/jre_zulu/lib/i386/jli:/home/user/starsector/jre_zulu/lib/i386 && ./starsector.sh"], configObj.opts);
+		} catch (e) {
+			printMessage(["Error running game: " + e.toString()]);
+		}
 
 		// Run the command in a loop, in case the user exits
 		while (true)

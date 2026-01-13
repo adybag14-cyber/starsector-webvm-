@@ -1,6 +1,6 @@
+logging.properties
 management
+net.properties
 sdp
 security
-logging.properties
-net.properties
 sound.properties

@@ -1,6 +1,3 @@
-bgs
-buttons
-icons
 alertglow_orange.png
 alertglow_red.png
 alertglow_yellow.png
@@ -13,6 +10,7 @@ alert_red2.png
 alert_yellow.png
 alert_yellow2.png
 armor_plate.png
+bgs
 bottomright_all.png
 bottomright_all_course_on.png
 bottomright_all_radar_off.png
@@ -23,6 +21,7 @@ bottomright_location_name_field.png
 bottomright_radar_holder.png
 bottomright_radar_projection.png
 bottom_left_button_transition.png
+buttons
 campaign_abilities.png
 campaign_abilities2.png
 campaign_infowidget.png
@@ -33,6 +32,7 @@ campaign_infowidget_compact.png
 campaign_infowidget_compact2.png
 campaign_infowidget_trim.png
 fighter_blank.png
+icons
 launcher_bg.jpg
 launch_button_bg.png
 loading_widget.png

@@ -5,7 +5,9 @@ export const diskImageType = "cloud";
 // Print an introduction message about the technology
 export const printIntro = true;
 // Is a graphical display needed
-export const needsDisplay = false;
+export const needsDisplay = true;
+// Memory limit in bytes (optional)
+export const memory = 3072 * 1024 * 1024;
 // Executable full path (Required)
 export const cmd = "/bin/bash";
 // Arguments, as an array (Required)

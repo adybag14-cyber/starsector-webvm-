@@ -1,15 +1,14 @@
-econ
-procgen
-terrain
 abilities.csv
 bar_events.csv
 channels.json
 commodities.csv
+econ
 events.json
 industries.csv
 market_conditions.csv
 person_missions.csv
 pings.json
+procgen
 reports.csv
 rules.csv
 sim_opponents.csv
@@ -17,4 +16,5 @@ sim_opponents_dev.csv
 special_items.csv
 starmap.json
 submarkets.csv
+terrain
 terrain.json

@@ -10,19 +10,23 @@ const cheerpxIndexer = () => ({
 	configureServer(server) {
 		server.middlewares.use((req, res, next) => {
 			const url = req.url.split('?')[0];
+			// Only intercept static folder assets
 			const fullPath = path.join(process.cwd(), 'static', url);
+			console.log(`[CheerpX] Request: ${req.method} ${url} Headers: ${JSON.stringify(req.headers)}`);
 
 			if (fs.existsSync(fullPath)) {
 				const stat = fs.statSync(fullPath);
 				let targetPath = fullPath;
 				let isDirectory = stat.isDirectory();
 
-				if (isDirectory) {
-					targetPath = path.join(fullPath, 'index.list');
-					if (!fs.existsSync(targetPath)) return next();
+				if (isDirectory && !url.endsWith('/') && !url.endsWith('index.list')) {
+					res.statusCode = 301;
+					res.setHeader('Location', url + '/');
+					res.end();
+					return;
 				}
 
-				const targetStat = fs.statSync(targetPath);
+				const targetStat = isDirectory ? null : fs.statSync(targetPath);
 				
 				// Set Global Headers for CheerpX
 				res.setHeader('Accept-Ranges', 'bytes');
@@ -38,25 +42,37 @@ const cheerpxIndexer = () => ({
 				}
 
 				// Handle index.list requests (Directory Indexing for CheerpX)
-				if (isDirectory || url.endsWith('index.list')) {
+				if (url.endsWith('/index.list')) {
 					const listPath = isDirectory ? path.join(fullPath, 'index.list') : fullPath;
 					if (fs.existsSync(listPath)) {
-						console.log(`[CheerpX] Serving index: ${url}`);
+						const listStat = fs.statSync(listPath);
 						res.setHeader('Content-Type', 'text/plain');
-						res.setHeader('Accept-Ranges', 'bytes');
+						res.setHeader('Content-Length', listStat.size);
 						res.statusCode = 200;
 						fs.createReadStream(listPath).pipe(res);
 						return;
 					}
 				}
 
-				// Handle Range Requests (PRIORITY for files)
-				if (req.headers.range) {
+				// Handle Range Requests (ESSENTIAL for .jar and .so files)
+				if (req.headers.range && !isDirectory) {
+					const parts = req.headers.range.replace(/bytes=/, "").split("-");
+					const start = parseInt(parts[0], 10);
+					const end = parts[1] ? parseInt(parts[1], 10) : targetStat.size - 1;
+					const chunksize = (end - start) + 1;
+					
+					res.setHeader('Content-Range', `bytes ${start}-${end}/${targetStat.size}`);
+					res.setHeader('Content-Length', chunksize);
+					res.setHeader('Content-Type', 'application/octet-stream');
+					res.statusCode = 206;
+					
+					fs.createReadStream(targetPath, {start, end}).pipe(res);
+					return;
+				}
 
-				// Handle Full Requests for specific types or directories
-				if (isDirectory || url.endsWith('.sh') || url.endsWith('.list')) {
+				// Fallback for full requests
+				if (!isDirectory && (req.method === 'GET' || req.method === 'HEAD')) {
 					res.setHeader('Content-Length', targetStat.size);
-					res.setHeader('Content-Type', isDirectory ? 'text/plain' : 'text/plain');
 					res.statusCode = 200;
 					if (req.method === 'HEAD') {
 						res.end();
@@ -100,8 +116,8 @@ export default defineConfig({
 		}
 	},
 	plugins: [
-		sveltekit(),
 		cheerpxIndexer(),
+		sveltekit(),
 		viteStaticCopy({
 			targets: [
 				{

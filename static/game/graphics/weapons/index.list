@@ -1,9 +1,3 @@
-covers
-decorative
-ionpulser
-rotary
-shredder
-storm
 am_blaster_hardpoint_base.png
 am_blaster_hardpoint_glow.png
 am_blaster_turret_base.png
@@ -42,8 +36,10 @@ burstpd_hardpoint_base.png
 burstpd_hardpoint_glow.png
 burstpd_turret_base.png
 burstpd_turret_glow.png
+covers
 cyclone_reaper_launcher_hardpoint_base.png
 cyclone_reaper_launcher_turret_base.png
+decorative
 devastator_hardpoint_base.png
 devastator_hardpoint_recoil.png
 devastator_turret_base.png
@@ -124,6 +120,7 @@ ionbeam_h_base.png
 ionbeam_h_glow.png
 ionbeam_t_base.png
 ionbeam_t_glow.png
+ionpulser
 ion_cannon_hardpoint_base.png
 ion_cannon_hardpoint_glow.png
 ion_cannon_turret_base.png
@@ -234,10 +231,13 @@ railgun_hardpoint_base.png
 railgun_hardpoint_glow.png
 railgun_turret_base.png
 railgun_turret_glow.png
+rotary
+shredder
 squall_hardpoint_base.png
 squall_hardpoint_under.png
 squall_turret_base.png
 squall_turret_under.png
+storm
 swarmer_srm_launcher_hardpoint_base.png
 swarmer_srm_launcher_turret_base.png
 tachyon_lance_hardpoint_base.png

@@ -1,10 +1,8 @@
-headless
-jli
-server
-xawt
 fxavcodecplugin-52.so
 fxavcodecplugin-53.so
 fxplugins.so
+headless
+jli
 jvm.cfg
 libawt.so
 libdcpr.so
@@ -51,3 +49,5 @@ libt2k.so
 libunpack.so
 libverify.so
 libzip.so
+server
+xawt

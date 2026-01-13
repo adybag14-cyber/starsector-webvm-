@@ -1,4 +1,3 @@
-proj
 amblaster.wpn
 annihilator.wpn
 annihilatorpod.wpn
@@ -69,6 +68,7 @@ phasecl.wpn
 phasecl_bomber.wpn
 pilum.wpn
 plasma.wpn
+proj
 projectile_weapon.sample
 pulselaser.wpn
 railgun.wpn
